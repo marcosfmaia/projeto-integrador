@@ -9,3 +9,5 @@ Projeto intregado proposto no curso da Digital House com parceria com Ifood.
 
 
 **Link Figma:** https://www.figma.com/file/Xmk360M4hcPs58cYieqwKX/Projeto-integrador?node-id=0%3A1
+
+## Branch para fazer os merge dos exercicios de cada um.
