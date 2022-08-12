@@ -1,0 +1,73 @@
+.group-title__cadastro {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #aaa;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.title__registrer:hover {
+    opacity: 0.6;
+}
+
+
+.title__registrer {
+    cursor: pointer;
+}
+
+.form-group {
+    width: 500px;
+    border: 2px solid #0578A6;
+    border-radius: 10px;
+    padding-block: 20px;
+}
+
+.form-group__cadastro {
+    all: unset;
+    display: block;
+    padding: 5px 10px;
+    margin: 0 50px;
+    position: relative;
+}
+
+.label__text {
+    display: block;
+    margin: 5px;
+}
+
+.user-nome {
+    all: unset;
+    width: 325px;
+    background-color: #F7F9F9;
+    padding: 12px 0px 12px 40px;
+    border-radius: 8px;
+}
+
+.user-email {
+    all: unset;
+    width: 325px;
+    background-color: #F7F9F9;
+    padding: 12px 0px 12px 40px;
+    border-radius: 8px;
+}
+
+.user-telefone {
+    all: unset;
+    width: 325px;
+    background-color: #F7F9F9;
+    padding: 12px 0px 12px 40px;
+    border-radius: 8px;
+}
+
+.btn-cadastro {
+    all: unset;
+    display: block;
+    background-color: #033F73;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 10px 150px;
+    margin: 0 auto;
+    cursor: pointer;
+}
