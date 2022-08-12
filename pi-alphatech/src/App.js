@@ -1,4 +1,5 @@
 import './App.css';
+import Busca from './components/Busca';
 import Menu from './components/Menu';
 import Card from './components/Card';
 
