@@ -11,6 +11,7 @@ function App() {
     
     <Busca/>
     <Login/>
+    <Cadastro/>
     <Menu/>
     <Card/>
     </div>
