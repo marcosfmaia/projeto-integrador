@@ -1,9 +1,9 @@
 import './App.css';
-import Busca from './components/Busca';
-import Login from './components/Login';
-import Cadastro from './components/Cadastro';
-import Menu from './components/Menu';
-import Card from './components/Card';
+import Busca from './components/HomePage/Busca';
+import Login from './components/HomePage/Login';
+import Cadastro from './components/HomePage/Cadastro';
+import Menu from './components/HomePage/Menu';
+import Card from './components/HomePage/Card';
 
 function App() {
   return (
