@@ -9,6 +9,7 @@ function App() {
     <div className="App">
     
     <Busca/>
+    <Login/>
     <Menu/>
     <Card/>
     </div>
