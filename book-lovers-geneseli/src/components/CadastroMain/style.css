@@ -59,6 +59,14 @@
     border-radius: 8px;
 }
 
+.user-senha {
+    all: unset;
+    width: 325px;
+    background-color: #F7F9F9;
+    padding: 12px 0px 12px 40px;
+    border-radius: 8px;
+}
+
 .btn-cadastro {
     all: unset;
     display: block;
