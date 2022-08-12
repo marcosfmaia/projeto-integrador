@@ -1,13 +1,9 @@
-import Container from "../../components/Container";
+import './style.css'
 
-function Home () {
+export default function Home () {
     return (
-        <div>
-            <Container />
-            
+        <div  className="container">
+          <h1>Sem bem vindo voçê está cadastrado! </h1>
         </div>
-
-    );
+    )
 }
-
-export default Home;
