@@ -1,4 +1,5 @@
 import './App.css';
+import './pages/Home'
 
 function App() {
   return (

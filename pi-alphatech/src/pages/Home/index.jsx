@@ -4,7 +4,6 @@ import './styles.css';
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Hours from "../../components/Hours";
 import Main from "../../components/Main";
 
 export default function Home() {
