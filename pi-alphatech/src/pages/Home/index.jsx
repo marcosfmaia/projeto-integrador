@@ -8,9 +8,6 @@ import Main from "../../components/Main";
 
 export default function Home() {
 
-    const [show, setShow] = React.useState(true)
-
-
     return (
         <Container>
             <Header />
