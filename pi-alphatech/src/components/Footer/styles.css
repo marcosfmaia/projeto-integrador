@@ -1,0 +1,33 @@
+.footer {
+    width: 100%;
+    height: 100px;
+
+    background-color: #0578a6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    text-align: center;
+
+}
+
+.footer__logo {
+    position: absolute;
+    top: -10px;
+
+    width: 150px;
+    filter: brightness(100);
+}
+
+.footer__menu {
+    position: absolute;
+    top: 55px;
+}
+
+.footer__menu .menu__item {
+    color: 033f73;
+    margin: 10px;
+}
