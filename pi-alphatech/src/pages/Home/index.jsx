@@ -14,10 +14,7 @@ export default function Home() {
     return (
         <Container>
             <Header />
-            <Main>
-                <Hours show={show} />
-                <button className="btn" onClick={() => setShow(!show)}>Mostrar/Esconder</button>
-            </Main>
+            <Main/>
             <Footer />
         </Container>
     );
