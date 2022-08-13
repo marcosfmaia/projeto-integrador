@@ -1,0 +1,13 @@
+.main {
+    width: 100%;
+    height: calc(100% - 150px);
+
+    background-color: #f2f2f2;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
