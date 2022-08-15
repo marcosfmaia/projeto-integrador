@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.title__login {
+.title__registrer {
     color: black;
     font-size: 36px;
     border-bottom: 2px solid #f2f2f2;
@@ -21,7 +21,7 @@
     padding-block: 20px;
 }
 
-.form-group__login {
+.form-group__cadastro {
     all: unset;
     display: block;
     padding: 5px 10px;
@@ -34,7 +34,7 @@
     margin: 5px;
 }
 
-.user-login {
+.user-nome {
     all: unset;
     width: 325px;
     background-color: #F7F9F9;
@@ -42,23 +42,31 @@
     border-radius: 8px;
 }
 
-.login__icon {
-    color: #0578A6;
-    font-size: 25px;
-    position: absolute;
-    top: 48%;
-    left: 15px;
+.user-email {
+    all: unset;
+    width: 325px;
+    background-color: #F7F9F9;
+    padding: 12px 0px 12px 40px;
+    border-radius: 8px;
 }
 
-.my-password {
-    display: block;
-    text-align: right;
-    text-decoration: none;
-    color: black;
-    margin: 10px 70px 50px;
+.user-telefone {
+    all: unset;
+    width: 325px;
+    background-color: #F7F9F9;
+    padding: 12px 0px 12px 40px;
+    border-radius: 8px;
 }
 
-.btn-login {
+.user-senha {
+    all: unset;
+    width: 325px;
+    background-color: #F7F9F9;
+    padding: 12px 0px 12px 40px;
+    border-radius: 8px;
+}
+
+.btn-cadastro {
     all: unset;
     display: block;
     background-color: #033F73;
@@ -68,18 +76,28 @@
     border-radius: 8px;
     padding: 10px 150px;
     margin: 0 auto;
+    margin-top: 15px;
     cursor: pointer;
 }
 
-.registe {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 15px;
-  }
+.login-group__previus {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 70px;;
+}
   
-  .registre-count {
+.register__arrow {
+    display: inline-block;
+    font-size: 28px;
+    color: #033F73;
+}
+  
+.register__login {
     color: #033F73;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
-  }
+    padding-block: 10px;
+}

@@ -2,8 +2,21 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
+:root {
+  --primaryColor: #033F73;
+  --secundaryColor: #0578A6;
+  --white: #F2F2F2;
+  --backgroundColor: #F7F9F9;
+  --backgroundColor: #F7F9F9;
+  --buttonSuccess: #04BE00;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
+

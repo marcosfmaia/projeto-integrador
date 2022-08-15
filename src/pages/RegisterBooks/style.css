@@ -1,0 +1,139 @@
+.margin {
+    padding-bottom: 30px;
+}
+
+.container-register__books {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    padding-inline: 40px;
+}
+
+.title__register {
+    background-color: var(--white);
+    font-size: 32px;
+    text-align: center;
+    padding-block: 5px;
+}   
+
+.subtitle__register {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title__book {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.subtitle__book {
+    display: inline-block;
+    font-size: 22px;
+    margin: 20px 20px 0;
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--white);
+}
+
+.content-image__book{
+    margin: 20px 20px 0;
+}
+
+.image__book {
+    width: 500px;
+}
+
+.subtitle__description {
+    border: none;
+}
+
+.description__book {
+    max-width: 500px;
+    font-size: 16px;
+    text-align: justify;
+    margin: 5px 20px 0;
+}
+
+.content__location{
+    margin: 40px 20px;
+}
+
+.location__icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.subtitle__location {
+    border: none;
+    margin: 0;
+}
+
+.origin__location {
+    font-size: 20px;
+    margin: 10px 40px 0;
+}
+
+.location-origin__book {
+    margin: 10px 40px 0;
+}
+
+.form-query__cep {
+    display: block;
+    margin: 0 40px ;
+}
+
+.form-group__info__cep {
+    all: unset;
+    width: 400px;
+    display: block;
+    position: relative;
+}
+
+.query__cep {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.input__cep {
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 50px 10px 10px;
+    margin-top: 10px;
+}
+
+.input__cep:focus {
+    border: 2px solid var(--primaryColor)
+}
+
+.search__icon {
+    font-size: 24px;
+    position: absolute;
+    top: 14px;
+    right: 110px;
+    cursor: pointer;
+}
+
+.btn__query-cep {
+    all: unset;
+    background-color: var(--buttonSuccess);
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btn__query-cep:hover {
+    opacity: .8;
+}
+
+.btn__register {
+   all: unset;
+   background-color: var(--primaryColor);
+   color: var(--white);
+   font-weight: bold;
+   border-radius: 8px;
+   margin: 20px 430px 50px;
+   padding: 9px 50px;
+}
