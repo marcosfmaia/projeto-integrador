@@ -15,7 +15,7 @@
   
   function ProtectedRoutes ({ redirectTo }) {
     const token = localStorage.getItem('users');
-    return token ? <Outlet /> : <Navigate to={{redirectTo} } /> 
+    return token ? <Outlet /> : <Navigate to={redirectTo } /> 
   }
   
   export default function MyRoutes () {
