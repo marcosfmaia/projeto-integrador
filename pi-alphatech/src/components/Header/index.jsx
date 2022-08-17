@@ -7,9 +7,9 @@ export default function Header() {
             <img className='header__logo' src={logo} alt='Logo do site' />
 
             <nav className='header__menu'>
-                <a className='menu__item' href='#'>Novidades</a>
-                <a className='menu__item' href='#'>Mais solicitados</a>
-                <a className='menu__item' href='#'>Contato</a>
+                <a className='menu__item' href='#'>Login</a>
+                <button className='button_signup'><a>Cadastre-se</a></button>
+                <a className='menu__item' href='#'>Ajuda</a>
             </nav >
         </header >
     );
