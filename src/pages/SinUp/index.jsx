@@ -1,17 +1,21 @@
 import './style.css'
 
 import * as React from "react";
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
-export default function CadastroMain () {
+export default function SinUp () {
 
+    const navigate = useNavigate()
     const [form, setForm] = React.useState({
         name: '',
         email: '',
         telephone: '',
         password: ''
     })
+
+    const [success, setSuccess] = React.useState('')
+    // const [failed, setFailed] = React.useState('')
 
     const handleChange = (e) => {
         setForm ({
@@ -36,7 +40,19 @@ export default function CadastroMain () {
             telephone: '',
             password: ''
         })
+        navigate('/')
     }
+
+    // React.useEffect(() => {
+    //     let users = JSON.parse(localStorage.getItem('users'))
+    //     if(users.find(u => u.email === form.email)) {
+    //         setSuccess("")
+    //         // setFailed("Usuario ja cadastradp")
+    //     } else {
+    //         setSuccess("Cadastrado com sucesso!")
+    //     }
+    // }, [form.email])
+
 
     return (
         <div className='container'>
@@ -69,6 +85,8 @@ export default function CadastroMain () {
                     />
                 </fieldset>
 
+                {/* <p className="register__failed"> { failed }</p> */}
+
                 <fieldset className="form-group__cadastro">
                     <label htmlFor="user-telefone" className="label__text">Telefone</label>
                     
@@ -93,6 +111,8 @@ export default function CadastroMain () {
                     onChange={handleChange}
                     />
                 </fieldset>
+
+                <p className="register__success">{ success }</p>
 
                 <button className="btn-cadastro">Cadastrar</button>
 

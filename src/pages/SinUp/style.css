@@ -50,6 +50,12 @@
     border-radius: 8px;
 }
 
+.register__failed {
+    color: red;
+    text-align: center;
+    margin: 0;
+}
+
 .user-telefone {
     all: unset;
     width: 325px;
@@ -64,6 +70,12 @@
     background-color: #F7F9F9;
     padding: 12px 0px 12px 40px;
     border-radius: 8px;
+}
+
+.register__success {
+    color: green;
+    text-align: center;
+    margin-block: 10px;
 }
 
 .btn-cadastro {
