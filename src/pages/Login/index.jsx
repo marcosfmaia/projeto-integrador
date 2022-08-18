@@ -11,6 +11,11 @@ export default function Login () {
         password: ''
     })
 
+    const [warning, setWarning] = React.useState({
+        show: false,
+        message: ''
+    });
+
     const handleChange = (e) => {
         setForm ({
             ...form,
@@ -21,16 +26,27 @@ export default function Login () {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const users = JSON.parse(localStorage.getItem('users'))
-
-        const result = users.find(user => user.email === form.email && user.password === form.password)
-
-        if(result) {
-            localStorage.setItem('token', true)
-            navigate('./Home')
+        let users = []
+        if(localStorage.getItem('users')) {
+            users = JSON.parse(localStorage.getItem('users'))
+            const user = users.find(use => use.email === form.email && use.password === form.password)
+            
+            if(user) {
+                localStorage.setItem('token', user.email)
+                setWarning({ show: false, message: '' });
+                navigate('./Home')
+            } else {
+                setWarning({ show: true, message: 'Usuário ou senha inválidos' });
+            }
         } else {
-            alert('Usuario ou senha invalido!')
-        }
+            setWarning({ show: true, message: 'Não existe usuários cadastrados' });
+        }setTimeout(() => {
+            setWarning({
+                show: false,
+                message: ''
+            });
+        }, 3000);
+        return;
     }
 
     const resetPassword = () => {
@@ -69,6 +85,8 @@ export default function Login () {
                 </fieldset>
 
                 <Link to="../ResetPassword" className="my-password" onClick={resetPassword}>Esqueci minha senha</Link>
+
+                {warning.show && <p className='login__failed'>{warning.message}</p>}
 
                 <button className="btn-login">Entrar</button>
 

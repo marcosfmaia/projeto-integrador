@@ -58,6 +58,13 @@
     margin: 10px 70px 50px;
 }
 
+.login__failed {
+    color: red;
+    text-align: center;
+    margin: -20px 0 10px;
+}
+
+
 .btn-login {
     all: unset;
     display: block;
@@ -75,11 +82,11 @@
     font-size: 14px;
     text-align: center;
     margin-top: 15px;
-  }
+}
   
   .registre-count {
     color: #033F73;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-  }
+}

@@ -13,9 +13,11 @@ export default function SinUp () {
         telephone: '',
         password: ''
     })
-
-    const [success, setSuccess] = React.useState('')
-    // const [failed, setFailed] = React.useState('')
+   
+    const [warning, setWarning] = React.useState({
+        show: false,
+        message: ''
+    });
 
     const handleChange = (e) => {
         setForm ({
@@ -26,6 +28,20 @@ export default function SinUp () {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        if(form.name === '' || form.email === '' || form.telephone === '' || form.password === '') {
+            setWarning({
+                show: true,
+                message: 'Preencha todos os campos'
+            });
+            setTimeout(() => {
+                setWarning({
+                    show: false,
+                    message: ''
+                });
+            }, 3000);
+            return;
+        }
 
         let users = []
 
@@ -40,18 +56,34 @@ export default function SinUp () {
             telephone: '',
             password: ''
         })
-        navigate('/')
+        setWarning({
+            show: false,
+            message: ''
+        });
+        setTimeout(() => {
+            setWarning({
+                show: true,
+                message: 'Usuario cadastrado com sucessso'
+            });
+        }, 3000);
+        return;
     }
 
-    // React.useEffect(() => {
-    //     let users = JSON.parse(localStorage.getItem('users'))
-    //     if(users.find(u => u.email === form.email)) {
-    //         setSuccess("")
-    //         // setFailed("Usuario ja cadastradp")
-    //     } else {
-    //         setSuccess("Cadastrado com sucesso!")
-    //     }
-    // }, [form.email])
+    React.useEffect(() => {
+        let users = JSON.parse(localStorage.getItem('users'))
+        if(users.find(u => u.email === form.email)) {
+            setWarning({
+                show: true,
+                message: 'E-mail ja cadastrado'
+            });
+            
+        } else {
+            setWarning({
+                show: false,
+                message: ''
+            });
+        }
+    }, [form.email])
 
 
     return (
@@ -85,8 +117,6 @@ export default function SinUp () {
                     />
                 </fieldset>
 
-                {/* <p className="register__failed"> { failed }</p> */}
-
                 <fieldset className="form-group__cadastro">
                     <label htmlFor="user-telefone" className="label__text">Telefone</label>
                     
@@ -112,9 +142,9 @@ export default function SinUp () {
                     />
                 </fieldset>
 
-                <p className="register__success">{ success }</p>
-
                 <button className="btn-cadastro">Cadastrar</button>
+
+                {warning.show && <p className='register__failed'>{warning.message}</p>}
 
                 <div className="login-group__previus">
                     <i class="bi bi-arrow-left-short register__arrow"></i>
