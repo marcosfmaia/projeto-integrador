@@ -24,11 +24,11 @@
     font-weight: bold;
     color: #0578a6;
     margin-right: 20px;
-
+    font-family: roboto;
     text-decoration: none;
 }
 
-.button_signup {
+.button__signup {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@
     padding: 0.25rem;
     line-height: 1.25rem;
     border-color: #ffffff;
-    border-radius: 0.58rem;
+    border-radius: 6px;
     color: #033f73;
     background-color: transparent;
     font-size: 14px;
@@ -45,4 +45,34 @@
     text-decoration: none;
     cursor: pointer;
     border-bottom-right-radius: 0.050rem solid;
+    font-family: roboto;
+}
+
+.base__input {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.25rem 7.25rem 0.25rem 0.25rem;
+    border-radius: 6px;
+    box-shadow: #f2f2f2;
+    color: #033f73;
+    font-size: 14px;
+    font-family: roboto;
+    outline: none;
+
+}
+
+.search {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.25rem 0.55rem 0.25rem 0.55rem;
+    border-radius: 6px;
+    border-color: #f2f2f2;
+    box-shadow: #f2f2f2;
+    color: #f2f2f2;
+    background-color: #033f73;
+    font-size: 14px;
+    font-family: roboto;
+    outline: none;
+    margin-left: 5px;
+
 }
