@@ -1,12 +1,12 @@
 import './style.css'
 
 import * as React from "react";
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 export default function SinUp () {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate():
     const [form, setForm] = React.useState({
         name: '',
         email: '',
@@ -48,43 +48,33 @@ export default function SinUp () {
         if(localStorage.getItem('users')) {
             users = JSON.parse(localStorage.getItem('users'))
         }
-        users.push(form)
-        localStorage.setItem('users', JSON.stringify(users))
-        setForm({
-            name: '',
-            email: '',
-            telephone: '',
-            password: ''
-        })
-        setWarning({
-            show: false,
-            message: ''
-        });
-        setTimeout(() => {
+        const user = users.find(u => u.email === form.email);
+        if(user) {
+            setWarning({
+                show: true,
+                message: 'E-mail já cadastrado'
+            });
+        } else {
+            users.push(form)
+            localStorage.setItem('users', JSON.stringify(users))
+            setForm({
+                name: '',
+                email: '',
+                telephone: '',
+                password: ''
+            })
             setWarning({
                 show: true,
                 message: 'Usuario cadastrado com sucessso'
             });
-        }, 3000);
-        return;
-    }
-
-    React.useEffect(() => {
-        let users = JSON.parse(localStorage.getItem('users'))
-        if(users.find(u => u.email === form.email)) {
-            setWarning({
-                show: true,
-                message: 'E-mail ja cadastrado'
-            });
-            
-        } else {
-            setWarning({
-                show: false,
-                message: ''
-            });
+            setTimeout(() => {
+                setWarning({
+                    show: false,
+                    message: ''
+                });
+            }, 10000);
         }
-    }, [form.email])
-
+    }
 
     return (
         <div className='container'>
