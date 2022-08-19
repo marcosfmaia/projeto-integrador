@@ -8,8 +8,10 @@ export default function Configurations ( { children} ) {
             <h1 className='title__configurations'>Configurações da Conta</h1>
             <hr className='line'></hr>
 
-            <h2 className='title__account'>Conta</h2>
-            <img className='title__account__image' src='./assets/profile.png' />
+            <div className='account'>
+                <h2 className='title__account'>Conta</h2>
+                <img className='title__account__image' src='./assets/profile.png' />
+            </div>
 
             <div className='configurations__main'>
                 <h3 className='password'>Senha</h3>
