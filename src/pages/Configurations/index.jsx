@@ -5,10 +5,11 @@ export default function Configurations ( { children} ) {
         <div className='container'>
             {children}
 
-            <h1 className='title__configurations'>Configurações da Conta</h1>
-            <hr className='line'></hr>
+            <div className='configurations__header'>
+                <h1 className='title__configurations'>Configurações da Conta</h1>
+                <hr className='line'></hr>
 
-            <div className='account'>
+    
                 <h2 className='title__account'>Conta</h2>
                 <img className='title__account__image' src='./assets/profile.png' />
             </div>
@@ -29,7 +30,7 @@ export default function Configurations ( { children} ) {
                 
             </div>
 
-            <div className='footer'>© BookLovers ©</div>
+            <div className='configurations__footer'>© BookLovers ©</div>
         </div>
 
 
