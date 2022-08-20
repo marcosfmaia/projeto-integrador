@@ -17,21 +17,20 @@ export default function RegisterBooks () {
 
             <p className='margin'></p>
 
-            <h2 className="title__register">Cadastrar livros</h2>
-            <h4 className="subtitle__register">Livros para moradores solicitar emprestimo</h4>
+            <h2 className="title__register">Cadastre seus livros</h2>
 
             <section className="register__books">
                 <div className="content__info">
-                    <h2 className="title__book">Cadastre seu livro</h2>
-                    <h4 className="subtitle__book">Lorem Ipsun Dollor</h4>
+                    <h2 className="title__book">Titulo do livro: <span className='title__book-dest-emphasis'>Lorem Ipsun Dollor</span> </h2>
 
                     <figure className="content-image__book">
                         <img src={Images} alt="imagem do livro" className="image__book" />
+
+                        <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend>
                     </figure>
 
-                    <h4 className="subtitle__book subtitle__description">Descrição</h4>
 
-                    <p className="description__book">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+                    {/* <p className="description__book">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p> */}
                 </div>
 
                 <div className="content__location">
@@ -62,7 +61,10 @@ export default function RegisterBooks () {
                     </fieldset>    
                 </form>
 
-                <button className="btn__register">Cadastrar</button>
+                <div className='content__btn'>
+                    <button className="btn-register__book">Cadastrar</button>
+                </div>
+
             </section>
         </div>
     )

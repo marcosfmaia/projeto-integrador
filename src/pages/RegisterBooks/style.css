@@ -10,32 +10,27 @@
 }
 
 .title__register {
-    background-color: var(--white);
+    border-bottom: 4px solid var(--primaryColor);
     font-size: 32px;
     text-align: center;
     padding-block: 5px;
 }   
 
-.subtitle__register {
-    font-size: 26px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 .title__book {
-    font-size: 26px;
-    margin-top: 20px;
+    color: var(--primaryColor);
+    font-size: 22px;
+    margin: 50px 10px 0;
 }
 
-.subtitle__book {
-    display: inline-block;
-    font-size: 22px;
-    margin: 20px 20px 0;
-    padding-bottom: 5px;
-    border-bottom: 4px solid var(--white);
+.title__book-dest-emphasis {
+    color: black;
+    font-weight: bold;
 }
 
 .content-image__book{
+    display: flex;
+    align-items: center;
+    gap: 50px;
     margin: 20px 20px 0;
 }
 
@@ -43,15 +38,13 @@
     width: 500px;
 }
 
-.subtitle__description {
-    border: none;
-}
-
 .description__book {
     max-width: 500px;
+    background-color: var(--white);
     font-size: 16px;
     text-align: justify;
     margin: 5px 20px 0;
+    padding: 20px;
 }
 
 .content__location{
@@ -79,7 +72,7 @@
 
 .form-query__cep {
     display: block;
-    margin: 0 40px ;
+    margin: 0 40px 40px;
 }
 
 .form-group__info__cep {
@@ -128,12 +121,18 @@
     opacity: .8;
 }
 
-.btn__register {
+.content__btn  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-register__book {
    all: unset;
    background-color: var(--primaryColor);
    color: var(--white);
    font-weight: bold;
    border-radius: 8px;
-   margin: 20px 430px 50px;
+   margin: 20px;
    padding: 9px 50px;
+   cursor: pointer;
 }
