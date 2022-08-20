@@ -17,6 +17,9 @@ In the project directory, you can run:
 
 **Link Figma:** https://www.figma.com/file/Xmk360M4hcPs58cYieqwKX/Projeto-integrador?node-id=0%3A1
 
+**Link do Projeto hospedado:** https://projeto-inte.herokuapp.com/
+
+
 ## Branch para fazer os merge dos exercicios de cada um.
 =======
 ### `npm start`
