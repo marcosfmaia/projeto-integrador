@@ -1,16 +1,18 @@
-import './style.css'
+import * as React from "react";
+import './styles.css';
 
-export default function Home () {
-  
-    const logout = () => {
-      
-    }
+import Container from "../../components/Container";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Main from "../../components/Main";
+
+export default function Home() {
 
     return (
-        <div  className="container">
-          <h1>Sem bem vindo voçe esta logado</h1>
-
-          <p onClick={logout}>Sair</p>
-        </div>
-    )
+        <Container>
+            <Header />
+            <Main />
+            <Footer />
+        </Container>
+    );
 }
