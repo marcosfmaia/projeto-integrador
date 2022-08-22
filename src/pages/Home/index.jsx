@@ -5,6 +5,8 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Main from "../../components/Main";
+import Card from "../../components/Card";
+import ModalDetails from "../../components/ModalDetails"
 
 export default function Home() {
     const [users, setUsers] = React.useState([])
