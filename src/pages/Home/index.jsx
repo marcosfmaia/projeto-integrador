@@ -24,24 +24,32 @@ export default function Home() {
     return (
         <Container>
             <Header />
+            <div className="title__page">
+            <h1>BookLovers - Ache o livro que você procura aqui!</h1>
+            <hr />
+            </div>
             
 
+
+            <div className="card">
             {/* {
                 users.map(user => (
                     <p>{user.name}</p>
                 ))
             } */}
-
-            <div className="card">
-            <div className="card__body">
-
-                <h5 className="card__title">Título do livro</h5>
-                <p className="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint aperiam non veritatis laboriosam ea ipsum tempora! Necessitatibus officia aspernatur reiciendis, perspiciatis quos iste modi. Incidunt dolorem eligendi aliquid sit nam?
-                </p>
-                <button className="card__btn">Saiba mais</button>
-            </div>
-            </div>
-                       
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </div>                       
                     
             <Footer />
         </Container>
