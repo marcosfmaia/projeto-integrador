@@ -1,41 +1,31 @@
-.margin {
-    padding-bottom: 30px;
-}
-
-.container-register__books {
-    width: 100%;
-    height: 100%;
-    background-color: lightblue;
+.register__books {
     padding-inline: 40px;
 }
 
 .title__register {
-    background-color: var(--white);
     font-size: 32px;
     text-align: center;
+    border-bottom: 4px solid var(--primaryColor);
+    margin: auto;
+    margin-block: 30px 20px;
     padding-block: 5px;
 }   
 
-.subtitle__register {
-    font-size: 26px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 .title__book {
-    font-size: 26px;
-    margin-top: 20px;
+    color: var(--primaryColor);
+    font-size: 22px;
+    margin: 30px 10px 0;
 }
 
-.subtitle__book {
-    display: inline-block;
-    font-size: 22px;
-    margin: 20px 20px 0;
-    padding-bottom: 5px;
-    border-bottom: 4px solid var(--white);
+.title__book-dest-emphasis {
+    color: black;
+    font-weight: bold;
 }
 
 .content-image__book{
+    display: flex;
+    align-items: center;
+    gap: 50px;
     margin: 20px 20px 0;
 }
 
@@ -43,15 +33,13 @@
     width: 500px;
 }
 
-.subtitle__description {
-    border: none;
-}
-
 .description__book {
     max-width: 500px;
+    background-color: var(--white);
     font-size: 16px;
     text-align: justify;
     margin: 5px 20px 0;
+    padding: 20px;
 }
 
 .content__location{
@@ -79,7 +67,7 @@
 
 .form-query__cep {
     display: block;
-    margin: 0 40px ;
+    margin: 0 40px 40px;
 }
 
 .form-group__info__cep {
@@ -97,14 +85,10 @@
 .input__cep {
     width: 300px;
     outline: none;
-    border: none;
+    border: 2px solid var(--primaryColor);
     border-radius: 7px;
     padding: 10px 50px 10px 10px;
     margin-top: 10px;
-}
-
-.input__cep:focus {
-    border: 2px solid var(--primaryColor)
 }
 
 .search__icon {
@@ -119,7 +103,7 @@
     all: unset;
     background-color: var(--buttonSuccess);
     border-radius: 8px;
-    padding: 8px 15px;
+    padding: 10px 15px;
     margin-left: 5px;
     cursor: pointer;
 }
@@ -128,12 +112,18 @@
     opacity: .8;
 }
 
-.btn__register {
+.content__btn  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-register__book {
    all: unset;
    background-color: var(--primaryColor);
    color: var(--white);
    font-weight: bold;
    border-radius: 8px;
-   margin: 20px 430px 50px;
+   margin: 20px;
    padding: 9px 50px;
+   cursor: pointer;
 }

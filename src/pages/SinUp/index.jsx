@@ -1,12 +1,17 @@
 import './style.css'
 
 import * as React from "react";
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+import Header from "../../components/Header";
+import Main from "../../components/Main";
+import Container from "../../components/Container";
+import Footer from "../../components/Footer";
 
 
 export default function SinUp () {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate():
     const [form, setForm] = React.useState({
         name: '',
         email: '',
@@ -48,53 +53,44 @@ export default function SinUp () {
         if(localStorage.getItem('users')) {
             users = JSON.parse(localStorage.getItem('users'))
         }
-        users.push(form)
-        localStorage.setItem('users', JSON.stringify(users))
-        setForm({
-            name: '',
-            email: '',
-            telephone: '',
-            password: ''
-        })
-        setWarning({
-            show: false,
-            message: ''
-        });
-        setTimeout(() => {
+        const user = users.find(u => u.email === form.email);
+        if(user) {
+            setWarning({
+                show: true,
+                message: 'E-mail já cadastrado'
+            });
+        } else {
+            users.push(form)
+            localStorage.setItem('users', JSON.stringify(users))
+            setForm({
+                name: '',
+                email: '',
+                telephone: '',
+                password: ''
+            })
             setWarning({
                 show: true,
                 message: 'Usuario cadastrado com sucessso'
             });
-        }, 3000);
-        return;
+            setTimeout(() => {
+                setWarning({
+                    show: false,
+                    message: ''
+                });
+            }, 10000);
+        }
     }
 
-    React.useEffect(() => {
-        let users = JSON.parse(localStorage.getItem('users'))
-        if(users.find(u => u.email === form.email)) {
-            setWarning({
-                show: true,
-                message: 'E-mail ja cadastrado'
-            });
-            
-        } else {
-            setWarning({
-                show: false,
-                message: ''
-            });
-        }
-    }, [form.email])
-
-
     return (
-        <div className='container'>
+        <Container>
+            <Header />
         
             <h2 className="title__registrer">Crie sua Conta</h2>
            
             <form className="form-group" onSubmit={handleSubmit}>
                 <fieldset className="form-group__cadastro">
                     <label htmlFor="user-nome" className="label__text">Nome</label>
-                    
+                    <i class="bi bi-person-fill login__icon"></i>
                     <input type="nome" 
                     id="user-nome"
                     className="user-nome" 
@@ -106,7 +102,7 @@ export default function SinUp () {
 
                 <fieldset className="form-group__cadastro">
                     <label htmlFor="user-email" className="label__text">Email</label>
-                   
+                    <i class="bi bi-envelope-fill login__icon"></i>
                     <input type="email" 
                     id="user-email" 
                     className="user-email" 
@@ -119,7 +115,7 @@ export default function SinUp () {
 
                 <fieldset className="form-group__cadastro">
                     <label htmlFor="user-telefone" className="label__text">Telefone</label>
-                    
+                    <i class="bi bi-telephone-fill login__icon"></i>
                     <input type="number" 
                     id="user-telefone" 
                     className="user-telefone"
@@ -132,6 +128,7 @@ export default function SinUp () {
 
                 <fieldset className="form-group__cadastro">
                     <label htmlFor="password" className="label__text">Senha</label>
+                    <i class="bi bi-lock-fill login__icon"></i>
                     <input type="password"  
                     id="password" 
                     className="user-senha" 
@@ -148,9 +145,11 @@ export default function SinUp () {
 
                 <div className="login-group__previus">
                     <i class="bi bi-arrow-left-short register__arrow"></i>
-                    <Link to="/" className="register__login">Voltar para login</Link>
+                    <Link to="/login" className="register__login">Voltar para login</Link>
                 </div>
             </form>
-        </div>
+
+            <Footer />
+        </Container>
     )
 }

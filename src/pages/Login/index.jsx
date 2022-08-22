@@ -3,6 +3,13 @@ import './style.css'
 import * as React from "react";
 import { useNavigate, Link } from 'react-router-dom'
 
+
+import Header from "../../components/Header";
+import Main from "../../components/Main";
+import Container from "../../components/Container";
+import Footer from "../../components/Footer";
+
+
 export default function Login () {
 
     const navigate = useNavigate()
@@ -49,12 +56,10 @@ export default function Login () {
         return;
     }
 
-    const resetPassword = () => {
-        
-    }
-
     return (
-        <div className='container'>
+        <Container>
+            <Header />
+            
             <h2 className="title__login">Login</h2>
 
             <form className="form-group" onSubmit={handleSubmit}>
@@ -84,7 +89,7 @@ export default function Login () {
                     />
                 </fieldset>
 
-                <Link to="../ResetPassword" className="my-password" onClick={resetPassword}>Esqueci minha senha</Link>
+                <Link to="../ResetPassword" className="my-password">Esqueci minha senha</Link>
 
                 {warning.show && <p className='login__failed'>{warning.message}</p>}
 
@@ -92,7 +97,9 @@ export default function Login () {
 
                 <p className="registe">Não tem uma conta? <Link to="../SinUp" className="registre-count">Registre-se</Link></p>
             </form>
-        </div>
+            
+            <Footer />
+        </Container>
     )
 }
  

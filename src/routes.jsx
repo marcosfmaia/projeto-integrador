@@ -24,7 +24,8 @@
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/resetPassword" element={<ResetPassword />} />
           <Route path="/sinUp" element={<SinUp />} />
           <Route path="/registerBooks" element={<RegisterBooks />} />
