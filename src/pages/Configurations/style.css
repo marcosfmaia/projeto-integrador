@@ -55,7 +55,8 @@
 }
 
 .configurations__footer{
-    display: block;
+    display: flex;
     margin-top: 30px;
     margin-left: 150px;
+    align-self: flex-end;
 }
