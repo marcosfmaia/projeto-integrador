@@ -33,8 +33,9 @@ export default function Configurations ( { children} ) {
                     <button className='disable__account__btn'>Desativar</button>
             
                 </div>
+            <Footer />
         </div>
-
+        
 
     )
 }
