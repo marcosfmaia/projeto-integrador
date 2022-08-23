@@ -1,4 +1,5 @@
-import './style.css'
+import "./style.css";
+
 
 export default function Configurations ( { children} ) {
     return (
@@ -8,7 +9,9 @@ export default function Configurations ( { children} ) {
             <div className='box'>            
 
                 <div className='configurations__header'>
-                    <h1 className='title__configurations'>Configurações da Conta</h1>            
+                    <h1 className='title__configurations'>Configurações da Conta</h1>
+                    <h3 className='title__account'>Conta</h3>
+                        
                 </div>
 
                 <div className='configurations__main'>
