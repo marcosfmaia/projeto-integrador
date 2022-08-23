@@ -1,16 +1,20 @@
 import "./style.css";
+import * as React from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 
 export default function Configurations ( { children} ) {
     return (
+        
+        
         <div className='container'>
             {children}
 
-            <div className='box'>            
+            <Header />
 
                 <div className='configurations__header'>
                     <h1 className='title__configurations'>Configurações da Conta</h1>
-                    <h3 className='title__account'>Conta</h3>
                         
                 </div>
 
@@ -27,11 +31,8 @@ export default function Configurations ( { children} ) {
                     <h3 className='disable__account'>Desativar Conta</h3>
                     <p className='main__text'>Deseja desativar sua conta?</p>
                     <button className='disable__account__btn'>Desativar</button>
-                
+            
                 </div>
-
-                <div className='configurations__footer'>© BookLovers ©</div>
-            </div>
         </div>
 
 
