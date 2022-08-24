@@ -37,9 +37,10 @@ export default function ChangePassword () {
                     />
                 </fieldset>
                 
+                <button className="btn-change">Alterar</button>
             </form>
             <Footer />
-                       
+
         </Container>
     )
 }
