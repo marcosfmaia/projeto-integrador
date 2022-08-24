@@ -35,7 +35,5 @@ export default function Configurations ( { children} ) {
                 </div>
             <Footer />
         </div>
-        
-
     )
 }

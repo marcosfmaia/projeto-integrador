@@ -1,4 +1,4 @@
-  import {
+import {
     BrowserRouter,
     Routes,
     Route,
@@ -13,6 +13,7 @@
   import Home from './pages/Home'
   import RegisterBooks from './pages/RegisterBooks'
   import Configurations from './pages/Configurations'
+  import ChangePassword from './pages/ChangePassword'
   
   function ProtectedRoutes ({ redirectTo }) {
     const token = localStorage.getItem('users');
@@ -30,6 +31,7 @@
           <Route path="/sinUp" element={<SinUp />} />
           <Route path="/registerBooks" element={<RegisterBooks />} />
           <Route path="/configurations" element={<Configurations />} />
+          <Route path="/changePassword" element={<ChangePassword />} />
           <Route element={<ProtectedRoutes redirectTo='/' />}>
             <Route path="/home" element={<Home />} />
             {/* <Route path="/registerBooks" element={<RegisterBooks />} /> */}
