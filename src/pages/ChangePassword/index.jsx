@@ -1,4 +1,5 @@
 import './style.css'
+import { Link } from 'react-router-dom'
 import Container from '../../components/Container';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -38,6 +39,11 @@ export default function ChangePassword () {
                 </fieldset>
                 
                 <button className="btn-change">Alterar</button>
+
+                <div className="change-group__previus">
+                    <i class="bi bi-arrow-left-short previus__arrow"></i>
+                    <Link to="/configurations" className="previus__configurations">Voltar</Link>
+                </div>
             </form>
             <Footer />
 

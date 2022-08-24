@@ -54,5 +54,23 @@
     cursor: pointer;
 }
 
+.change-group__previus{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
 
+.previus__arrow {
+    display: inline-block;
+    font-size: 28px;
+    color: var(--primaryColor);
+}
 
+.previus__configurations{
+    color: var(--primaryColor);
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-block: 10px;
+}
