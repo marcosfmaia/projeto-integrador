@@ -14,6 +14,7 @@ import {
   import RegisterBooks from './pages/RegisterBooks'
   import Configurations from './pages/Configurations'
   import ChangePassword from './pages/ChangePassword'
+  import ChangeEmail from './pages/ChangeEmail'
   
   function ProtectedRoutes ({ redirectTo }) {
     const token = localStorage.getItem('users');
@@ -32,6 +33,7 @@ import {
           <Route path="/registerBooks" element={<RegisterBooks />} />
           <Route path="/configurations" element={<Configurations />} />
           <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/changeEmail" element={<ChangeEmail/>} />
           <Route element={<ProtectedRoutes redirectTo='/' />}>
             <Route path="/home" element={<Home />} />
             {/* <Route path="/registerBooks" element={<RegisterBooks />} /> */}
