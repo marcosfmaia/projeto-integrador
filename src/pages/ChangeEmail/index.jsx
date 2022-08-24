@@ -15,7 +15,7 @@ export default function ChangeEmail () {
                     <i class="bi bi-envelope-fill reset__icon"></i>
                     <input 
                     type="email" 
-                    className='reset__pass' 
+                    className='reset__email' 
                     placeholder='Digite seu email atual' 
                     />
                 </fieldset>
@@ -24,7 +24,7 @@ export default function ChangeEmail () {
                     <i class="bi bi-envelope-fill reset__icon"></i>
                     <input 
                     type="email" 
-                    className='reset__pass' 
+                    className='reset__email' 
                     placeholder='Digite um novo email' 
                     />
                 </fieldset>
