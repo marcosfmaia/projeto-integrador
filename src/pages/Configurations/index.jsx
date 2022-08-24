@@ -35,7 +35,10 @@ export default function Configurations ( { children} ) {
 
                     <h3 className='disable__account'>Desativar Conta</h3>
                     <p className='main__text'>Deseja desativar sua conta?</p>
-                    <button className='disable__account__btn'>Desativar</button>
+                    <Link to='/disableAccount'>
+                        <button className='disable__account__btn'>Desativar</button>
+                    </Link>
+                    
             
                 </div>
             <Footer />
