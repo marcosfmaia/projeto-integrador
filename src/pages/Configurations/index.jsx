@@ -28,9 +28,10 @@ export default function Configurations ( { children} ) {
 
                     <h3 className='email'>Endereço de e-mail</h3>
                     <p className='main__text'>Seu endereço de e-mail é <strong>digitalhouse@gmail.com</strong></p>
-                    <button className='change__btn'>Alterar</button>
+                    <Link to='/changeEmail'>
+                        <button className='change__btn'>Alterar</button>
+                    </Link>    
                     <hr className='line'></hr>
-
 
                     <h3 className='disable__account'>Desativar Conta</h3>
                     <p className='main__text'>Deseja desativar sua conta?</p>
