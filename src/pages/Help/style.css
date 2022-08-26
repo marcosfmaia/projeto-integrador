@@ -21,7 +21,7 @@
 }
 
 .card-help-1:hover {
-    background-color: #ebf3f1;
+    background-color: var(--tertiaryColor);
 }
 .card-help-2 {
     all: unset;
@@ -33,6 +33,6 @@
 }
 
 .card-help-2:hover {
-    background-color: #ebf3f1;
+    background-color: var(--tertiaryColor) 
 } 
 
