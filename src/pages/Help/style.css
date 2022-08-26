@@ -4,6 +4,12 @@
     margin-top: 40px;
 }
 
+.card-title {
+    color: var(--primaryColor);
+    font-style: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+}
 .card-help-1 {
     all: unset;
     display: block;
@@ -12,10 +18,13 @@
     margin-right: 600px;
     border: 2px solid var(--secundaryColor);
 }
-
-.card-title {
-    color: var(--primaryColor);
-    font-style: bold;
-    padding: 5px;
-    margin-bottom: 10px;
+.card-help-2 {
+    all: unset;
+    display: block;
+    padding: 24px;
+    margin-top: -305px;
+    margin-left: 600px;
+    border: 2px solid var(--secundaryColor);
 }
+
+
