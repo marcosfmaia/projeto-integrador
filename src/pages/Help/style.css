@@ -4,7 +4,7 @@
     margin-top: 40px;
 }
 
-.box-help-1 {
+.card-help-1 {
     all: unset;
     display: block;
     padding: 25px;
@@ -13,7 +13,7 @@
     border: 2px solid var(--secundaryColor);
 }
 
-.box-title {
+.card-title {
     color: var(--primaryColor);
     font-style: bold;
     padding: 5px;

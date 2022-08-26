@@ -10,8 +10,8 @@ export default function Help () {
                <h1 className="title-help">Como podemos te ajudar?</h1> 
             </div>
 
-            <div className="box-help-1">
-                <h3 className="box-title">Como posso solicitar o empréstimo do livro?</h3>
+            <div className="card-help-1">
+                <h3 className="card-title">Como posso solicitar o empréstimo do livro?</h3>
 
                 <p>Para solicitar o empréstimo do livro você deverá <br />
                     clicar no botão <strong>Saiba mais</strong>. Após isso, você será <br />
