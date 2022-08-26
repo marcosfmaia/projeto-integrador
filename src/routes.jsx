@@ -16,6 +16,8 @@ import {
   import ChangePassword from './pages/ChangePassword'
   import ChangeEmail from './pages/ChangeEmail'
   import DisableAccount from './pages/DisableAccount'
+  import Help from './pages/Help'
+  
   
   function ProtectedRoutes ({ redirectTo }) {
     const token = localStorage.getItem('users');
@@ -36,6 +38,7 @@ import {
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/changeEmail" element={<ChangeEmail/>} />
           <Route path="/disableAccount" element={<DisableAccount/>} />
+          <Route path="/help" element={<Help/>} />
           <Route element={<ProtectedRoutes redirectTo='/' />}>
             <Route path="/home" element={<Home />} />
             {/* <Route path="/registerBooks" element={<RegisterBooks />} /> */}
