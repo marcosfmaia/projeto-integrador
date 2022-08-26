@@ -54,6 +54,23 @@ export default function Help () {
                 </li>
 
             </div>
+
+            <div className="card-help-3">
+                <h3 className="card-title">O empréstimo é gratuito?</h3>
+                
+                <p className="card-description">
+                    Teoricamente sim, entretanto, como a negociação <br />
+                    ocorrerá entre fornecedor e usuário, <strong>ficará a critério <br />
+                    da pessoa dona do livro,  a inclusão de algum tipo <br />
+                    de taxa</strong>. Todo o processo de acordo de empréstimo <br />
+                    do livro será realizado entre as partes interessadas. <br />
+                    A BookLovers tem como objetivo disponibiizar as <br />
+                    informações sobre os livros da vitrine e seus <br />
+                    fornecedores.                    
+                </p>
+                
+                   
+            </div>
         </Container>
     )
 }
