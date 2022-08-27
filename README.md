@@ -1,20 +1,20 @@
 # Getting Started with Create React App
 
-<<<<<<< HEAD
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<<<<<<< HEAD
+
 - [Ananda Caroline Fidelis e Silva](https://github.com/anandaFidelis)
-- [Geneseli Dias de Oliveira Albuquer](https://github.com/geneselidias)
+- [Geneseli Dias de Oliveira Albuquerque](https://github.com/geneselidias)
 - [Marcos Felipe Maia Diniz](https://github.com/marcosfmaia)
 - [William Batista Costa](https://github.com/williambcosta) 
 =======
 ## Available Scripts
->>>>>>> c7e6873b88feae2464fe64afdef3cbef23f0aa73
+
 
 In the project directory, you can run:
 
-<<<<<<< HEAD
+
 **Link Figma:** https://www.figma.com/file/Xmk360M4hcPs58cYieqwKX/Projeto-integrador?node-id=0%3A1
 
 ## Branch para fazer os merge dos exercicios de cada um.
@@ -81,9 +81,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> c7e6873b88feae2464fe64afdef3cbef23f0aa73
-=======
-## Integrantes
-- [William Batista Costa](https://github.com/williambcosta)
-- [Geneseli Dias de Oliveira Albuquerque](https://github.com/geneselidias) 
->>>>>>> cb4d3ac1872c65f35c412a4db59d7ae9ef3e6164
+

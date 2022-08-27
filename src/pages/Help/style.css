@@ -1,0 +1,50 @@
+.title-help {
+    border-bottom: 4px solid var(--primaryColor);
+    padding: 4px;
+    margin-top: 40px;
+}
+
+.card-title {
+    color: var(--primaryColor);
+    font-style: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.card-help-1 {
+    all: unset;
+    display: block;
+    padding: 25px;
+    margin-top: 60px;
+    margin-right: 600px;
+    border: 2px solid var(--secundaryColor);
+    
+}
+
+.card-help-1:hover {
+    background-color: var(--tertiaryColor);
+}
+.card-help-2 {
+    all: unset;
+    display: block;
+    padding: 24px;
+    margin-top: -305px;
+    margin-left: 600px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-2:hover {
+    background-color: var(--tertiaryColor) 
+} 
+
+.card-help-3 {
+    all: unset;
+    display: block;
+    padding: 12px;
+    margin-top: 60px;
+    margin-right: 600px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-3:hover {
+    background-color: var(--tertiaryColor) 
+} 
