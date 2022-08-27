@@ -8,7 +8,7 @@ import {
   
   
   import Login from './pages/Login'
-  import SinUp from './pages/SinUp'
+  import SignUp from './pages/SignUp'
   import Home from './pages/Home'
   import RegisterBooks from './pages/RegisterBooks'
   import Configurations from './pages/Configurations'
@@ -30,7 +30,7 @@ import {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/sinUp" element={<SinUp />} />
+          <Route path="/signUp" element={<SignUp />} />
           <Route path="/registerBooks" element={<RegisterBooks />} />
           <Route path="/configurations" element={<Configurations />} />
           <Route path="/changePassword" element={<ChangePassword />} />
