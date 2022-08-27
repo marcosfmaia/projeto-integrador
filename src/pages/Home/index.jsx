@@ -4,7 +4,7 @@ import './styles.css';
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Main from "../../components/Main";
+//import Main from "../../components/Main";
 import Card from "../../components/Card";
 import ModalDetails from "../../components/ModalDetails"
 
@@ -26,7 +26,6 @@ export default function Home() {
             <Header />
             <div className="title__page">
             <h1>BookLovers - Ache o livro que você procura aqui!</h1>
-            <hr />
             </div>
             
 
