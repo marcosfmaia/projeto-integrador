@@ -49,6 +49,11 @@
     font-family: roboto;
 }
 
+.button__signup:hover {
+    background-color: #033f73;
+    color: #f2f2f2;
+}
+
 .header__input {
     display: inline-block;
     vertical-align: middle;
