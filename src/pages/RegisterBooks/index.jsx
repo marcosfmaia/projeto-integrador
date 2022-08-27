@@ -11,6 +11,10 @@ import Footer from "../../components/Footer";
 
 
 export default function RegisterBooks () {
+
+    const handleTitle = () => {
+
+    }
     return(
         <Container>
             <Header />
@@ -20,16 +24,34 @@ export default function RegisterBooks () {
             <section className="register__books">
 
                 <div className="content__info">
-                    <h2 className="title__book">Titulo do livro: <span className='title__book-dest-emphasis'>Lorem Ipsun Dollor</span> </h2>
+                    <div className='content__info-title'>
+                        <label htmlFor="title" className="title__book">Titulo do livro:</label>
+                        <input type="text" 
+                        className='input__title-boook'
+                        placeholder='Digite o titulo'
+                        id='title'
+                        name='ititle'
+                        value=''
+                        onChange={handleTitle}
+                        />
+                    </div>
 
                     <figure className="content-image__book">
-                        <img src={Images} alt="imagem do livro" className="image__book" />
+                        {/* <img src={Images} alt="imagem do livro" className="image__book" /> */}
 
-                        <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend>
+                        <input type="file" accept='image/' className='file__image-book'/>
+{/* 
+                        <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend> */}
+
                     </figure>
 
 
-                    {/* <p className="description__book">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p> */}
+
+                    <div className='description-book'>
+                        <label htmlFor='description' className="title__book">Digite a descrição do livro:</label>
+
+                        <input type="text" placeholder='Digite a descrição' id='description' className='input__description-book' />
+                    </div>
                 </div>
 
                 <div className="content__location">
