@@ -10,7 +10,7 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 
 
-export default function RegisterBks () {
+export default function RegisterBooks () {
 
     const handleTitle = () => {
 

@@ -88,8 +88,6 @@ export default function Login () {
                     />
                 </fieldset>
 
-                <Link to="" className="my-password">Esqueci minha senha</Link>
-
                 {warning.show && <p className='login__failed'>{warning.message}</p>}
 
                 <button className="btn-login">Entrar</button>
