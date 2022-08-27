@@ -3,6 +3,7 @@ import Container from "../../components/Container";
 import Header from "../../components/Header";
 
 export default function Help () {
+    
     return (
         <Container>
             <Header />
@@ -13,45 +14,45 @@ export default function Help () {
             <div className="card-help-1">
                 <h3 className="card-title">Como cadastrar seus livros?</h3>
 
-                <li className="content-list">
-                    <ol><strong>1.</strong> Após efetuar seu login, vá até a barra de menu <br />
-                    e clique no botão <strong>Cadastre seus livros</strong>;</ol>
+                <ol className="content-list">
+                    <li><strong>1.</strong> Após efetuar seu login, vá até a barra de menu <br />
+                    e clique no botão <strong>Cadastre seus livros</strong>;</li>
                     <br />
 
-                    <ol><strong>2.</strong> Após isso, você será redirecionado para a <br />
-                    página de cadastro dos livros;</ol>
+                    <li><strong>2.</strong> Após isso, você será redirecionado para a <br />
+                    página de cadastro dos livros;</li>
                     <br />
 
-                    <ol><strong>3.</strong> Nela você poderá preencher os campos de  <br />
+                    <li><strong>3.</strong> Nela você poderá preencher os campos de  <br />
                     título, imagem, descrição e localização do livro <br />
-                    que deseja cadastrar; </ol>
+                    que deseja cadastrar; </li>
                     <br />
 
-                    <ol><strong>4.</strong> Após isso, clique no botão <strong>Cadastrar</strong>. <br />
-                    </ol>
-                </li>
+                    <li><strong>4.</strong> Após isso, clique no botão <strong>Cadastrar</strong>. <br />
+                    </li>
+                </ol>
 
             </div>
 
             <div className="card-help-2">
                 <h3 className="card-title">Como solicitar o empréstimo do livro?</h3>
 
-                <li className="content-list">
-                    <ol><strong>1.</strong> Clique no botão <strong>Saiba mais</strong>;</ol>
+                <ol className="content-list">
+                    <li><strong>1.</strong> Clique no botão <strong>Saiba mais</strong>;</li>
                     <br />
 
-                    <ol><strong>2.</strong> Após isso, você será redirecionado para os <br />
-                    detalhes do livro;</ol>
+                    <li><strong>2.</strong> Após isso, você será redirecionado para os <br />
+                    detalhes do livro;</li>
                     <br />
 
-                    <ol><strong>3.</strong> Nesse espaço, você terá acesso ao  contato <br />
+                    <li><strong>3.</strong> Nesse espaço, você terá acesso ao  contato <br />
                     da pessoa que está disponibilizando o livro  <br />
-                    desejado; </ol>
+                    desejado; </li>
                     <br />
 
-                    <ol><strong>4.</strong> A negociação será realizada diretamente entre <br />
-                    você e o fornecedor do livro. </ol>
-                </li>
+                    <li><strong>4.</strong> A negociação será realizada diretamente entre <br />
+                    você e o fornecedor do livro. </li>
+                </ol>
 
             </div>
 
