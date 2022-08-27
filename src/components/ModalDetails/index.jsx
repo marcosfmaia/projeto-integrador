@@ -14,27 +14,48 @@ export default function ModalDetails(props) {
     
     return (
         <div className='modal'>
+            
             <div className='modal__body'>
-                <h6 className='modal__title'>{props.user.name}</h6>
-                <h5 className='modal__subtitle'>{props.user.genre} </h5>
-                <p className='modal__text'>Descrição: </p>
-                <p className='modal__text'>Cadastro: </p>
-                <p className='modal__text'>Disponibilidade: </p>
-                <p className='modal__text'>Endereço: </p>
-                <p className='modal__text'>Contato: </p>
                 <button 
+                    className='modal__btnx'
                     onClick={() => props.setShowModal(false)}
-                    className='modal__btn'
                 >
-                    Fechar
+                    X
                     </button>
 
-                <div className='modal__img'>
+                <div>
+                    <h6 className='modal__title'>Título do Livro</h6>
+                    <h5 className='modal__subtitle'>Gênero do livro</h5>
+                </div>
+
+                <div className='description'>
+                    <h4 className='text__title'>Descrição</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora ipsa eligendi dolores natus pariatur aperiam magnam facere dolorum? Odio id ut excepturi corrupti eos ab tempore illum ducimus beatae aut, inventore neque, fuga culpa non doloremque repudiandae quas pariatur!</p>
+                </div>
+                
+                <aside className='modal__text'>
+                    <p>Cadastro:</p>
+                    <p>Disponibilidade: </p>
+                    <p>Endereço: <br /></p>
+                    <p>Contato: </p>
+                </aside>
+
+                <div>
+                <h3 className='img__title'>Imagens</h3>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li className='modal__img'></li>
+                    <li className='modal__img'></li>
+                    <li className='modal__img'></li>
                 </ul>
+                </div>
+
+                <div>
+                    <button 
+                    className='modal__btn'
+                    onClick={() => props.setShowModal(false)}
+                    >
+                    Fechar
+                    </button>
                 </div>
 
             </div>
