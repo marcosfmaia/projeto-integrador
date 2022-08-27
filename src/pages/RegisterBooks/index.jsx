@@ -4,22 +4,21 @@ import * as React from "react";
 
 import Images from '../../assets/book.jpg'
 
-// import Header from '../../components/Header'
-// import NavBar from '../../components/NavBar'
-// import { Link } from 'react-router-dom'
+import Header from "../../components/Header";
+import Main from "../../components/Main";
+import Container from "../../components/Container";
+import Footer from "../../components/Footer";
 
 
 export default function RegisterBooks () {
     return(
-        <div className="container-register__books">
-            {/* <Header /> */}
-            {/* <NavBar /> */}
+        <Container>
+            <Header />
 
-            <p className='margin'></p>
 
             <h2 className="title__register">Cadastre seus livros</h2>
-
             <section className="register__books">
+
                 <div className="content__info">
                     <h2 className="title__book">Titulo do livro: <span className='title__book-dest-emphasis'>Lorem Ipsun Dollor</span> </h2>
 
@@ -64,8 +63,9 @@ export default function RegisterBooks () {
                 <div className='content__btn'>
                     <button className="btn-register__book">Cadastrar</button>
                 </div>
-
             </section>
-        </div>
+
+            <Footer />
+        </Container>
     )
 }
