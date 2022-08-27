@@ -31,14 +31,15 @@
 .button__signup {
     display: inline-block;
     justify-content: center;
+    height: 30px;
+    width: 110px;
     align-items: center;
     vertical-align: middle;
-    padding: 0.25rem;
     line-height: 1.25rem;
-    border-color: #ffffff;
+    border-color: #033f73;
     border-radius: 6px;
     color: #033f73;
-    background-color: transparent;
+    background-color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     margin-right: 20px;
