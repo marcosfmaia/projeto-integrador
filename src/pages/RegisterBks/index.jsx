@@ -10,7 +10,7 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 
 
-export default function RegisterBooks () {
+export default function RegisterBks () {
 
     const handleTitle = () => {
 
@@ -19,10 +19,9 @@ export default function RegisterBooks () {
         <Container>
             <Header />
 
+           <h2 className="title__register">Cadastre seus livros</h2>
 
-            <h2 className="title__register">Cadastre seus livros</h2>
             <section className="register__books">
-
                 <div className="content__info">
                     <div className='content__info-title'>
                         <label htmlFor="title" className="title__book">Titulo do livro:</label>
@@ -39,18 +38,20 @@ export default function RegisterBooks () {
                     <figure className="content-image__book">
                         {/* <img src={Images} alt="imagem do livro" className="image__book" /> */}
 
-                        <input type="file" accept='image/' className='file__image-book'/>
 {/* 
                         <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend> */}
 
+                        <label htmlFor="file" className='choose__file-book'>Escolher imagem</label>
+                        <input type="file" accept='image/' id='file' className='file__image-book'/>
                     </figure>
 
 
 
                     <div className='description-book'>
-                        <label htmlFor='description' className="title__book">Digite a descrição do livro:</label>
+                        <label htmlFor='description' className="title__book description__text-book">Digite a descrição do livro:</label>
 
-                        <input type="text" placeholder='Digite a descrição' id='description' className='input__description-book' />
+                        <textarea id='description' className='input__description-book' placeholder='Escreva a sinopse do seu livro'></textarea>
+
                     </div>
                 </div>
 
@@ -86,7 +87,6 @@ export default function RegisterBooks () {
                     <button className="btn-register__book">Cadastrar</button>
                 </div>
             </section>
-
             <Footer />
         </Container>
     )

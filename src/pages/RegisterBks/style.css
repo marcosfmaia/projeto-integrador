@@ -1,7 +1,3 @@
-.register__books {
-    padding-inline: 40px;
-}
-
 .title__register {
     font-size: 32px;
     text-align: center;
@@ -10,6 +6,10 @@
     margin-block: 30px 20px;
     padding-block: 5px;
 }  
+
+.register__books {
+    padding-inline: 40px;
+}
 
 .content__info-title {
     display: flex;
@@ -42,10 +42,23 @@
 }
 
 .file__image-book {
-    /* width: 190px; */
+    display: none;
+}
+
+.choose__file-book {
+    display: block;
+    width: 200px;
+    background-color: var(--primaryColor);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 10px;
+    margin-block: 40px;
+    cursor: pointer;
 }
 
 .description-book {
+    display: block;
     font-size: 16px;
     text-align: justify;
     margin: 5px 20px 0;
@@ -53,12 +66,21 @@
     margin: 20px 0;
 }
 
+.description__text-book {
+    display: block;
+    margin: 5px 0px 10px;
+}
+
 .input__description-book {
-    all: unset;
-    width: 325px;
+    all: unset; 
+    display: block;
+    height: 300px;
+    width: 550px;
     background-color: var(--white);
     padding: 10px 20px 10px ;
     border-radius: 8px;
+
+    overflow-wrap: break-word;
 }
 
 .content__location{
