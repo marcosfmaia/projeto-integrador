@@ -48,3 +48,16 @@
 .card-help-3:hover {
     background-color: var(--tertiaryColor) 
 } 
+
+.card-help-4 {
+    all: unset;
+    display: block;
+    padding: 30px;
+    margin-top: -280px;
+    margin-left: 600px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-4:hover {
+    background-color: var(--tertiaryColor) 
+} 
