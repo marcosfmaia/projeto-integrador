@@ -63,13 +63,39 @@ export default function Help () {
                     Teoricamente sim, entretanto, como a negociação <br />
                     ocorrerá entre fornecedor e usuário, <strong>ficará a critério <br />
                     da pessoa dona do livro,  a inclusão de algum tipo <br />
-                    de taxa</strong>. Todo o processo de acordo de empréstimo <br />
+                    de taxa</strong>. <br /> 
+                    <br />
+                    Todo o processo de acordo de empréstimo <br />
                     do livro será realizado entre as partes interessadas. <br />
+                    <br />
                     A BookLovers tem como objetivo disponibiizar as <br />
                     informações sobre os livros da vitrine e seus <br />
                     fornecedores.                    
                 </p>
                 
+                   
+            </div>
+
+            <div className="card-help-4">
+                <h3 className="card-title">Como fazer um empréstimo seguro?</h3>
+                
+               
+                <ol className="content-list">
+                    <li><strong>1.</strong> Certifique-se de que o livro está cadastrado <br />
+                    no site; </li>
+                    <br />
+
+                    <li><strong>2.</strong> Você pode fazer uma busca rápida na <strong>barra  <br />
+                    do menu</strong>, localizada na parte superior da <br />
+                    página inicial;
+                    </li>
+                    <br />
+
+                    <li><strong>3.</strong> Entre em contato com o fornecedor através, <br />
+                    <strong>apenas</strong>, dos contatos disponibilizados no site;  <br />
+                    </li>                 
+                    
+                </ol>
                    
             </div>
         </Container>
