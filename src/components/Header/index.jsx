@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <header className='header'>
-            <img className='header__logo' src={logo} alt='Book Lovers' href='/../Login' />
+            <img className='header__logo' src={logo} alt='Book Lovers'/>
 
             <form className='header__form'>            
             <input
