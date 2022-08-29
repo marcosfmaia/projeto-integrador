@@ -38,6 +38,8 @@ export default function Home() {
             <div className="card">
             
             <Card/>
+            <Card/>
+            <Card/>
             
             
             {/*
