@@ -26,7 +26,7 @@
 .card-help-2 {
     all: unset;
     display: block;
-    padding: 24px;
+    padding: 25px;
     margin-top: -305px;
     margin-left: 600px;
     border: 2px solid var(--secundaryColor);
@@ -61,3 +61,29 @@
 .card-help-4:hover {
     background-color: var(--tertiaryColor) 
 } 
+
+.card-help-5 {
+    all: unset;
+    display: block;
+    padding: 15px;
+    margin-top: 60px;
+    margin-right: 600px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-5:hover {
+    background-color: var(--tertiaryColor) 
+} 
+
+.card-help-6 {
+    all: unset;
+    display: block;
+    padding: 32px;
+    margin-top: -226px;
+    margin-left: 600px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-6:hover {
+    background-color: var(--tertiaryColor) 
+}

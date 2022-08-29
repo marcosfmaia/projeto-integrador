@@ -1,6 +1,7 @@
 import "./style.css"
 import Container from "../../components/Container";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer"
 
 export default function Help () {
     
@@ -71,9 +72,7 @@ export default function Help () {
                     A BookLovers tem como objetivo disponibiizar as <br />
                     informações sobre os livros da vitrine e seus <br />
                     fornecedores.                    
-                </p>
-                
-                   
+                </p>                        
             </div>
 
             <div className="card-help-4">
@@ -85,19 +84,51 @@ export default function Help () {
                     no site; </li>
                     <br />
 
-                    <li><strong>2.</strong> Você pode fazer uma busca rápida na <strong>barra  <br />
+                    <li><strong>2.</strong> Você pode fazer uma busca rápida na <strong>barra <br />
                     do menu</strong>, localizada na parte superior da <br />
                     página inicial;
                     </li>
                     <br />
 
                     <li><strong>3.</strong> Entre em contato com o fornecedor através, <br />
-                    <strong>apenas</strong>, dos contatos disponibilizados no site;  <br />
+                    <strong>apenas</strong>, dos contatos disponibilizados no site.  <br />
                     </li>                 
                     
                 </ol>
                    
             </div>
+
+            <div className="card-help-5">
+                <h3 className="card-title">Como verificar a disponibilidade do livro?</h3>
+
+                <ol className="content-list">
+                    <li><strong>1.</strong> Clique no botão <strong>Saiba mais</strong>;</li>
+                    <br />
+
+                    <li><strong>2.</strong> Após isso, você será redirecionado para os <br />
+                    detalhes do livro;</li>
+                    <br />
+
+                    <li><strong>3.</strong> No <strong>canto superior direito</strong> dessa página, haverá<br />
+                    o indicativo de disponibilidade do livro.</li>
+                    <br />
+                </ol>
+            </div>
+
+            <div className="card-help-6">
+                <h3 className="card-title">Outras dúvidas</h3>
+                
+                <p className="card-description">
+                    Para outras dúvidas, entrar em contato com a <br /> 
+                    BookLovers, através do e-mail <br /> 
+                    <strong>booklovers@gmail.com</strong>.
+                    <br />
+                    <br />
+                    Agradecemos o contato e o atendimento<br />
+                    será o mais breve possível.<br />                                
+                </p>               
+            </div>
+            <Footer />
         </Container>
     )
 }
