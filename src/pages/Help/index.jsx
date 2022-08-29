@@ -1,14 +1,14 @@
 import "./style.css"
 import Container from "../../components/Container";
 import Header from "../../components/Header";
-import Footer from "../../components/Footer"
+import Footer from "../../components/Footer";
 
 export default function Help () {
     
     return (
         <Container>
             <Header />
-            <div className="title">
+            <div className="title"> 
                <h1 className="title-help">Como podemos te ajudar?</h1> 
             </div>
 
@@ -127,7 +127,7 @@ export default function Help () {
                     Agradecemos o contato e o atendimento<br />
                     será o mais breve possível.<br />                                
                 </p>               
-            </div>
+            </div> 
             <Footer />
         </Container>
     )
