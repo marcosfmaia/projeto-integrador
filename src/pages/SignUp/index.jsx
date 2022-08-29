@@ -9,7 +9,7 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 
 
-export default function SinUp () {
+export default function SignUp () {
 
     // const navigate = useNavigate():
     const [form, setForm] = React.useState({
