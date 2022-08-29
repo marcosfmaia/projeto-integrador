@@ -26,18 +26,27 @@ export default function ModalDetails(props) {
                 <div>
                     <h6 className='modal__title'>Título do Livro</h6>
                     <h5 className='modal__subtitle'>Gênero do livro</h5>
+                    
+                    <div>
+                        <p className='modal__cad'>Cadastro:</p>
+                    </div>
+
+                    <div>
+                        <p className='modal__disp'>Disponibilidade: </p>
+                    </div>
+
                 </div>
 
                 <div className='description'>
                     <h4 className='text__title'>Descrição</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora ipsa eligendi dolores natus pariatur aperiam magnam facere dolorum? Odio id ut excepturi corrupti eos ab tempore illum ducimus beatae aut, inventore neque, fuga culpa non doloremque repudiandae quas pariatur!</p>
                 </div>
+
+
                 
-                <aside className='modal__text'>
-                    <p>Cadastro:</p>
-                    <p>Disponibilidade: </p>
-                    <p>Endereço: <br /></p>
-                    <p>Contato: </p>
+                <aside>
+                    <p className='modal__text'>Endereço: <br /></p>
+                    <p className='modal__text'>Contato: </p>
                 </aside>
 
                 <div>
