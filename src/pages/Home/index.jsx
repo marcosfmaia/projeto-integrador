@@ -4,13 +4,15 @@ import './styles.css';
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Main from "../../components/Main";
+//import Main from "../../components/Main";
 import Card from "../../components/Card";
 import ModalDetails from "../../components/ModalDetails"
 
 export default function Home() {
-<<<<<<< HEAD
+    
+    /*const [user, setUser] = React.useState([])
     const [users, setUsers] = React.useState([])
+    const [showModal, setShowModal] = React.useState(false)
 
     React.useEffect(() => {
         const getUsers = () => {
@@ -19,33 +21,37 @@ export default function Home() {
         }
 
         getUsers();
-
     }, [])
-=======
-   
->>>>>>> refs/remotes/origin/developer
+
+    const handleShowModal = (u) => {
+        setShowModal(true)
+        setUser(user)
+    }*/
 
     return (
         <Container>
             <Header />
             <div className="title__page">
             <h1>BookLovers - Ache o livro que você procura aqui!</h1>
-            <hr />
             </div>
             
-
-
             <div className="card">
-            {/* {
-                users.map(user => (
-                    <p>{user.name}</p>
+            
+            <Card/>
+            <Card/>
+            <Card/>
+            
+            
+            {/*
+                users.map(u => (
+                    <div onClick={() => handleShowModal(u)}>
+                    <Card user={u} />
+                    </div>
                 ))
-            } */}
-                <Card />
-                <Card />
-                <Card />
-
-            </div>                       
+                */}
+            </div>
+            {/*showModal && <ModalDetails user={user} setShowModal={setShowModal} />*/}
+                      
                     
             <Footer />
         </Container>
