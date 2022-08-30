@@ -45,15 +45,6 @@
     left: 15px;
 }
 
-.my-password {
-    display: block;
-    color: var(--primaryColor);
-    font-weight: bold;
-    text-align: right;
-    text-decoration: none;
-    margin: 10px 70px 50px;
-}
-
 .login__failed {
     color: red;
     text-align: center;
@@ -70,7 +61,7 @@
     font-size: 1.5rem;
     border-radius: 8px;
     padding: 10px 150px;
-    margin: 0 auto;
+    margin: 40px auto;
     cursor: pointer;
 }
 
