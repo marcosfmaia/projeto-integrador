@@ -5,7 +5,7 @@ export default function Configurations ({children}) {
 
 
     return (
-<<<<<<< HEAD
+
         <div className='container'>
             {children}
 
@@ -33,7 +33,7 @@ export default function Configurations ({children}) {
 
                 <div className='configurations__footer'>© BookLovers ©</div>
             </div>
-=======
+        
         
         <div className='container'>
             {children}
@@ -68,11 +68,8 @@ export default function Configurations ({children}) {
 
             </div>
             <Footer />
-        
-            
->>>>>>> branch-lili
+    
         </div>
-
-
+        </div>
     )
 }
