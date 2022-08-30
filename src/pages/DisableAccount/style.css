@@ -1,14 +1,6 @@
-.container {
+.form-disable-account {
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: lightblue;
-}
-
-.form-reset {
-    height: 100vh;
+    height: 74vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,35 +12,38 @@
     position: relative;
 }
 
-.title__reset {
+.title-disable-account {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.email__icon {
+.reset__icon {
     font-size: 24px;
+    color: var(--secundaryColor);
     position: absolute;
-    top: 9px;
+    top: 13px;
     left: 5px;
 }
 
 .reset__pass {
     width: 300px;
+    background-color: var(--bg-input);
     outline: none;
     border: none;
     border-radius: 6px;
     padding: 15px 40px;
+    margin-block: 5px;
 }
 
 .reset__pass:focus {
     border: 2px solid var(--primaryColor);
 }
 
-.btn-reset {
+.btn-disable-account {
     all: unset;
     width: 300px;
     display: block;
-    background-color: #033F73;
+    background-color: var(--primaryColor);
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -69,11 +64,11 @@
 .previus__arrow {
     display: inline-block;
     font-size: 28px;
-    color: #033F73;
+    color: var(--primaryColor);
 }
 
-.previus__login {
-    color: #033F73;
+.previus__configurations {
+    color:var(--primaryColor);
     font-size: 14px;
     font-weight: bolder;
     text-decoration: none;

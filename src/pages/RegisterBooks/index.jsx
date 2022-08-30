@@ -4,34 +4,55 @@ import * as React from "react";
 
 import Images from '../../assets/book.jpg'
 
-// import Header from '../../components/Header'
-// import NavBar from '../../components/NavBar'
-// import { Link } from 'react-router-dom'
+import Header from "../../components/Header";
+import Main from "../../components/Main";
+import Container from "../../components/Container";
+import Footer from "../../components/Footer";
 
 
 export default function RegisterBooks () {
+
+    const handleTitle = () => {
+
+    }
     return(
-        <div className="container-register__books">
-            {/* <Header /> */}
-            {/* <NavBar /> */}
+        <Container>
+            <Header />
 
-            <p className='margin'></p>
-
-            <h2 className="title__register">Cadastrar livros</h2>
-            <h4 className="subtitle__register">Livros para moradores solicitar emprestimo</h4>
+           <h2 className="title__register">Cadastre seus livros</h2>
 
             <section className="register__books">
                 <div className="content__info">
-                    <h2 className="title__book">Cadastre seu livro</h2>
-                    <h4 className="subtitle__book">Lorem Ipsun Dollor</h4>
+                    <div className='content__info-title'>
+                        <label htmlFor="title" className="title__book">Titulo do livro:</label>
+                        <input type="text" 
+                        className='input__title-boook'
+                        placeholder='Digite o titulo'
+                        id='title'
+                        name='ititle'
+                        value=''
+                        onChange={handleTitle}
+                        />
+                    </div>
 
                     <figure className="content-image__book">
-                        <img src={Images} alt="imagem do livro" className="image__book" />
+                        {/* <img src={Images} alt="imagem do livro" className="image__book" /> */}
+
+{/* 
+                        <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend> */}
+
+                        <label htmlFor="file" className='choose__file-book'>Escolher imagem</label>
+                        <input type="file" accept='image/' id='file' className='file__image-book'/>
                     </figure>
 
-                    <h4 className="subtitle__book subtitle__description">Descrição</h4>
 
-                    <p className="description__book">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+
+                    <div className='description-book'>
+                        <label htmlFor='description' className="title__book description__text-book">Digite a descrição do livro:</label>
+
+                        <textarea id='description' className='input__description-book' placeholder='Escreva a sinopse do seu livro'></textarea>
+
+                    </div>
                 </div>
 
                 <div className="content__location">
@@ -62,8 +83,11 @@ export default function RegisterBooks () {
                     </fieldset>    
                 </form>
 
-                <button className="btn__register">Cadastrar</button>
+                <div className='content__btn'>
+                    <button className="btn-register__book">Cadastrar</button>
+                </div>
             </section>
-        </div>
+            <Footer />
+        </Container>
     )
 }

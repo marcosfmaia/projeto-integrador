@@ -1,9 +1,9 @@
-import './style.css'
+import './styles.css';
 
-export default function Container() {
+export default function Container({ children }) {
     return (
-        <div className='container'>
-           
+        <div className="container">
+            {children}
         </div>
     );
 }
