@@ -53,6 +53,7 @@ export default function Login () {
                 message: ''
             });
         }, 3000);
+        return;
     }
 
     return (
@@ -88,16 +89,13 @@ export default function Login () {
                     />
                 </fieldset>
 
-<<<<<<< HEAD
-                <Link to="" className="my-password">Esqueci minha senha</Link>
+                <Link to="../ResetPassword" className="my-password">Esqueci minha senha</Link>
 
-=======
->>>>>>> refs/remotes/origin/developer
                 {warning.show && <p className='login__failed'>{warning.message}</p>}
 
                 <button className="btn-login">Entrar</button>
 
-                <p className="registe">Não tem uma conta? <Link to="../SinUp" className="registre-count">Cadastre-se</Link></p>
+                <p className="registe">Não tem uma conta? <Link to="../SinUp" className="registre-count">Registre-se</Link></p>
             </form>
             
             <Footer />

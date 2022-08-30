@@ -1,20 +1,7 @@
-<<<<<<< HEAD
-=======
-.title__register {
-    font-size: 32px;
-    text-align: center;
-    border-bottom: 4px solid var(--primaryColor);
-    margin: auto;
-    margin-block: 30px 20px;
-    padding-block: 5px;
-}  
-
->>>>>>> refs/remotes/origin/developer
 .register__books {
     padding-inline: 40px;
 }
 
-<<<<<<< HEAD
 .title__register {
     font-size: 32px;
     text-align: center;
@@ -23,12 +10,6 @@
     margin-block: 30px 20px;
     padding-block: 5px;
 }   
-=======
-.content__info-title {
-    display: flex;
-    align-items: baseline;
-}
->>>>>>> refs/remotes/origin/developer
 
 .title__book {
     color: var(--primaryColor);
@@ -36,12 +17,9 @@
     margin: 30px 10px 0;
 }
 
-.input__title-boook {
-    all: unset;
-    width: 325px;
-    background-color: #F7F9F9;
-    padding: 10px 20px 10px ;
-    border-radius: 8px;
+.title__book-dest-emphasis {
+    color: black;
+    font-weight: bold;
 }
 
 .content-image__book{
@@ -55,46 +33,13 @@
     width: 500px;
 }
 
-.file__image-book {
-    display: none;
-}
-
-.choose__file-book {
-    display: block;
-    width: 200px;
-    background-color: var(--primaryColor);
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px 10px;
-    margin-block: 40px;
-    cursor: pointer;
-}
-
-.description-book {
-    display: block;
+.description__book {
+    max-width: 500px;
+    background-color: var(--white);
     font-size: 16px;
     text-align: justify;
     margin: 5px 20px 0;
     padding: 20px;
-    margin: 20px 0;
-}
-
-.description__text-book {
-    display: block;
-    margin: 5px 0px 10px;
-}
-
-.input__description-book {
-    all: unset; 
-    display: block;
-    height: 300px;
-    width: 550px;
-    background-color: var(--white);
-    padding: 10px 20px 10px ;
-    border-radius: 8px;
-
-    overflow-wrap: break-word;
 }
 
 .content__location{

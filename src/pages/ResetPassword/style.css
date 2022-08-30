@@ -1,0 +1,79 @@
+.form-reset {
+    width: 100vw;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    /* border: 1px solid var(--primaryColor); */
+}
+
+.form-group__reset {
+    all: unset;
+    position: relative;
+}
+
+.title__reset {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.reset__icon {
+    font-size: 24px;
+    color: var(--secundaryColor);
+    position: absolute;
+    top: 13px;
+    left: 5px;
+}
+
+.reset__email,
+.reset__pass {
+    width: 300px;
+    background-color: var(--bg-input);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 40px;
+    margin-block: 5px;
+}
+
+.reset__pass:focus {
+    border: 2px solid var(--primaryColor);
+}
+
+.btn-reset {
+    all: unset;
+    width: 300px;
+    display: block;
+    background-color: var(--primaryColor);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.reset-group__previus {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.previus__arrow {
+    display: inline-block;
+    font-size: 28px;
+    color: var(--primaryColor);
+}
+
+.previus__login {
+    color: #033F73;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-block: 10px;
+}
+  

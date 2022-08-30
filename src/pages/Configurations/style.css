@@ -1,52 +1,33 @@
 .container {
-<<<<<<< HEAD
     width: 100vw;
     height: 100vh;
-=======
-    max-width: 100vw;
-    min-height: 100vh;
->>>>>>> refs/remotes/origin/developer
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
 }
 
+.box{
+    border: 4px solid #033F73;
+    padding: 80px;
+}
+
 .title__configurations{
-<<<<<<< HEAD
     border-bottom: 4px solid #033F73;
-=======
-    border-bottom: 4px solid var(--primaryColor);
->>>>>>> refs/remotes/origin/developer
-    padding: 4px;
-    margin-top: 40px;
 }
 
 .configurations__main{
-    margin-top: 35px;
     padding-top: 30px;
-<<<<<<< HEAD
-    margin-bottom: 35px;
-=======
-    margin-bottom: 80px;
->>>>>>> refs/remotes/origin/developer
 }
 
 .change__btn {
     display: block;
     margin-left: 330px;
-    margin-top: 5px;
     padding: 5px 25px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
-<<<<<<< HEAD
     background-color: #033F73;
-=======
-    background-color: var(--primaryColor);
->>>>>>> refs/remotes/origin/developer
-    cursor: pointer;
-    border: none;
     
 }
 
@@ -55,32 +36,23 @@
     margin-left: 310px;
     padding: 5px 25px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
-<<<<<<< HEAD
     background-color: #033F73;
-=======
-    background-color:  var(--primaryColor);
->>>>>>> refs/remotes/origin/developer
-    cursor: pointer;
-    border: none;
 }
 
 .line{
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 4px;
-<<<<<<< HEAD
-    color: #0578A6;
-    background-color: #0578A6;
-=======
-    color: var(--secundaryColor);
-    background-color: var(--secundaryColor);
->>>>>>> refs/remotes/origin/developer
+    margin-top: 10px;
+    size: 5px;
+    color: #033F73;
 }
 
 .main__text {
     margin-top: 10px;
 }
 
+.configurations__footer{
+    display: block;
+    margin-top: 30px;
+    margin-left: 150px;
+}

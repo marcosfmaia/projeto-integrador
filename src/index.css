@@ -5,11 +5,9 @@
 :root {
   --primaryColor: #033F73;
   --secundaryColor: #0578A6;
-  --tertiaryColor: #EBF3F1;
   --white: #F2F2F2;
   --bg-input: #F7F9F9;
   --buttonSuccess: #04BE00;
-  
 }
 
 * {

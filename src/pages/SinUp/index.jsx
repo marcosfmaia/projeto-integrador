@@ -4,7 +4,7 @@ import * as React from "react";
 import { Link } from 'react-router-dom'
 
 import Header from "../../components/Header";
-// import Main from "../../components/Main";
+import Main from "../../components/Main";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 
