@@ -72,27 +72,26 @@
 .modal__cad {
     font-size: 16px;
     color: #033F73;
-    margin: -50px 525px;
+    margin: -50px 520px;
     text-align: justify;
-    border-bottom: 4px solid #D9D9D9;
     
 }
 
 .modal__disp {
     font-size: 12px;
     color: #033F73;
-    margin: 50px 525px;
+    margin: 55px 520px;
     text-align: justify;
-    border-bottom: 4px solid #D9D9D9;
 }
 
 .modal__text {
     font-size: 16px;
     color: #033F73;
-    margin: 0px 525px;
-    text-align: justify;
     border-bottom: 4px solid #D9D9D9;
-    padding-bottom: 20px;
+    margin: 30px -200px 50px 480px;
+
+    padding-bottom: 2px;
+
 }
 
 .img__title {
@@ -100,7 +99,7 @@
     font-size: 18px;
     border-bottom: 4px solid #D9D9D9;
     margin-right: 580px;
-    margin-block: -20px 20px;
+    margin-block: -100px 20px;
     padding-bottom: 2px;
 }
 
@@ -113,7 +112,7 @@
     width: 10em;
     display: inline-block;
     vertical-align: middle;
-    margin: 110px 275px;
+    margin: 100px 275px;
     padding: 0.25rem 0.55rem 0.25rem 0.55rem;
     border-radius: 6px;
     border-color: #f2f2f2;

@@ -40,14 +40,17 @@ export default function ModalDetails(props) {
                 <div className='description'>
                     <h4 className='text__title'>Descrição</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora ipsa eligendi dolores natus pariatur aperiam magnam facere dolorum? Odio id ut excepturi corrupti eos ab tempore illum ducimus beatae aut, inventore neque, fuga culpa non doloremque repudiandae quas pariatur!</p>
+                
+                    <aside>
+                    <p className='modal__text'>Endereço: <br /></p>
+                    <p className='modal__text'>Contato: </p>
+                    </aside>
+                
                 </div>
 
 
                 
-                <aside>
-                    <p className='modal__text'>Endereço: <br /></p>
-                    <p className='modal__text'>Contato: </p>
-                </aside>
+
 
                 <div>
                 <h3 className='img__title'>Imagens</h3>
