@@ -8,7 +8,11 @@ import {
   
   
   import Login from './pages/Login'
+<<<<<<< HEAD
   import SignUp from './pages/SignUp'
+=======
+  import SinUp from './pages/SinUp'
+>>>>>>> refs/remotes/origin/developer
   import Home from './pages/Home'
   import RegisterBooks from './pages/RegisterBooks'
   import Configurations from './pages/Configurations'
@@ -30,7 +34,11 @@ import {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+<<<<<<< HEAD
           <Route path="/signUp" element={<SignUp />} />
+=======
+          <Route path="/sinUp" element={<SinUp />} />
+>>>>>>> refs/remotes/origin/developer
           <Route path="/registerBooks" element={<RegisterBooks />} />
           <Route path="/configurations" element={<Configurations />} />
           <Route path="/changePassword" element={<ChangePassword />} />

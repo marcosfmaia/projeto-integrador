@@ -26,7 +26,11 @@
 .card-help-2 {
     all: unset;
     display: block;
+<<<<<<< HEAD
     padding: 24px;
+=======
+    padding: 25px;
+>>>>>>> refs/remotes/origin/developer
     margin-top: -305px;
     margin-left: 600px;
     border: 2px solid var(--secundaryColor);
@@ -47,4 +51,48 @@
 
 .card-help-3:hover {
     background-color: var(--tertiaryColor) 
+<<<<<<< HEAD
 } 
+=======
+} 
+
+.card-help-4 {
+    all: unset;
+    display: block;
+    padding: 30px;
+    margin-top: -280px;
+    margin-left: 600px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-4:hover {
+    background-color: var(--tertiaryColor) 
+} 
+
+.card-help-5 {
+    all: unset;
+    display: block;
+    padding: 15px;
+    margin-top: 60px;
+    margin-right: 600px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-5:hover {
+    background-color: var(--tertiaryColor) 
+} 
+
+.card-help-6 {
+    all: unset;
+    display: block;
+    padding: 32px;
+    margin-top: -226px;
+    margin-left: 600px;
+    margin-bottom: 85px;
+    border: 2px solid var(--secundaryColor);
+}
+
+.card-help-6:hover {
+    background-color: var(--tertiaryColor) 
+}
+>>>>>>> refs/remotes/origin/developer

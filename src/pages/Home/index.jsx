@@ -9,6 +9,7 @@ import Card from "../../components/Card";
 import ModalDetails from "../../components/ModalDetails"
 
 export default function Home() {
+<<<<<<< HEAD
     const [users, setUsers] = React.useState([])
 
     React.useEffect(() => {
@@ -20,6 +21,9 @@ export default function Home() {
         getUsers();
 
     }, [])
+=======
+   
+>>>>>>> refs/remotes/origin/developer
 
     return (
         <Container>

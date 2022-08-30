@@ -88,8 +88,11 @@ export default function Login () {
                     />
                 </fieldset>
 
+<<<<<<< HEAD
                 <Link to="" className="my-password">Esqueci minha senha</Link>
 
+=======
+>>>>>>> refs/remotes/origin/developer
                 {warning.show && <p className='login__failed'>{warning.message}</p>}
 
                 <button className="btn-login">Entrar</button>

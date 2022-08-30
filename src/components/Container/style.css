@@ -1,10 +1,7 @@
 .container {
     max-width: 100vw;
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
-
-    align-items: flex-start;
-    background-color: red;
+    align-items: center;
 }

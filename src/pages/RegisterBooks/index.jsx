@@ -11,25 +11,54 @@ import Footer from "../../components/Footer";
 
 
 export default function RegisterBooks () {
+
+    const handleTitle = () => {
+
+    }
     return(
         <Container>
             <Header />
 
+<<<<<<< HEAD
 
             <h2 className="title__register">Cadastre seus livros</h2>
+=======
+           <h2 className="title__register">Cadastre seus livros</h2>
+
+>>>>>>> refs/remotes/origin/developer
             <section className="register__books">
 
                 <div className="content__info">
-                    <h2 className="title__book">Titulo do livro: <span className='title__book-dest-emphasis'>Lorem Ipsun Dollor</span> </h2>
+                    <div className='content__info-title'>
+                        <label htmlFor="title" className="title__book">Titulo do livro:</label>
+                        <input type="text" 
+                        className='input__title-boook'
+                        placeholder='Digite o titulo'
+                        id='title'
+                        name='ititle'
+                        value=''
+                        onChange={handleTitle}
+                        />
+                    </div>
 
                     <figure className="content-image__book">
-                        <img src={Images} alt="imagem do livro" className="image__book" />
+                        {/* <img src={Images} alt="imagem do livro" className="image__book" /> */}
 
-                        <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend>
+{/* 
+                        <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend> */}
+
+                        <label htmlFor="file" className='choose__file-book'>Escolher imagem</label>
+                        <input type="file" accept='image/' id='file' className='file__image-book'/>
                     </figure>
 
 
-                    {/* <p className="description__book">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p> */}
+
+                    <div className='description-book'>
+                        <label htmlFor='description' className="title__book description__text-book">Digite a descrição do livro:</label>
+
+                        <textarea id='description' className='input__description-book' placeholder='Escreva a sinopse do seu livro'></textarea>
+
+                    </div>
                 </div>
 
                 <div className="content__location">
@@ -64,7 +93,10 @@ export default function RegisterBooks () {
                     <button className="btn-register__book">Cadastrar</button>
                 </div>
             </section>
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/developer
             <Footer />
         </Container>
     )
