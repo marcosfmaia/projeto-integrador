@@ -37,7 +37,7 @@
 }
 
 .card-help-2:hover {
-    background-color: var(--tertiaryColor) 
+    background-color: var(--tertiaryColor); 
 } 
 
 .card-help-3 {
@@ -50,10 +50,14 @@
 }
 
 .card-help-3:hover {
+<<<<<<< HEAD
     background-color: var(--tertiaryColor) 
 <<<<<<< HEAD
 } 
 =======
+=======
+    background-color: var(--tertiaryColor); 
+>>>>>>> branch-lili
 } 
 
 .card-help-4 {
@@ -66,7 +70,7 @@
 }
 
 .card-help-4:hover {
-    background-color: var(--tertiaryColor) 
+    background-color: var(--tertiaryColor); 
 } 
 
 .card-help-5 {
@@ -79,7 +83,7 @@
 }
 
 .card-help-5:hover {
-    background-color: var(--tertiaryColor) 
+    background-color: var(--tertiaryColor); 
 } 
 
 .card-help-6 {
@@ -93,6 +97,11 @@
 }
 
 .card-help-6:hover {
+<<<<<<< HEAD
     background-color: var(--tertiaryColor) 
 }
 >>>>>>> refs/remotes/origin/developer
+=======
+    background-color: var(--tertiaryColor); 
+}
+>>>>>>> branch-lili
