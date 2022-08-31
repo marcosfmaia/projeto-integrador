@@ -32,6 +32,11 @@
     color: #0578a6;
 }
 
+.button__signup-item:hover {
+    color: white;
+}
+
+
 .button__signup {
     display: inline-block;
     justify-content: center;
