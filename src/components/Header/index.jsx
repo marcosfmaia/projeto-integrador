@@ -1,7 +1,11 @@
 import './styles.css';
 import logo from '../../assets/logoBookLovers48x48.png';
 import iconUser from '../../assets/profile.png';
-import React from 'react';
+
+import * as React from 'react'
+
+import { Link } from 'react-router-dom'
+
 
 export default function Header() {
     const [filter, setFilter] = React.useState('');
@@ -12,7 +16,7 @@ export default function Header() {
 
     return (
         <header className='header'>
-            <img className='header__logo' src={logo} alt='Book Lovers'/>
+            <Link to="/"> <img className='header__logo' src={logo} alt='Book Lovers'/> </Link>
 
             <form className='header__form'>            
             <input
@@ -28,10 +32,10 @@ export default function Header() {
             </form>
             
             <nav className='header__menu'>
-            <i class="bi bi-person-fill header__user"></i>
-                <a className='menu__item' href='/../Login'>Login</a>
-                <button className='button__signup' href='/../SignUp'><a>Cadastre-se</a></button>
-                <a className='menu__item' href='/../Help'>Ajuda</a>
+                <i class="bi bi-person-fill header__user"></i>
+                <Link className='menu__item' to='../../Login'>Login</Link>
+                <button className='button__signup'><Link className='button__signup-item' to='../../SinUp'>Cadastre-se</Link></button>
+                <Link className='menu__item' to='../../Help'>Ajuda</Link>
             </nav >
         </header >
     );

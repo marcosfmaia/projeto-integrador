@@ -1,4 +1,5 @@
 import "./style.css"
+import Container from "../../components/Container";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
@@ -9,7 +10,7 @@ export default function Configurations ({children}) {
 
     return (
 
-        <div className='container'>
+        <Container>
             {children}
         
             <Header />
@@ -43,7 +44,7 @@ export default function Configurations ({children}) {
             </div>
             <Footer />
     
-        </div>
+        </Container>
         
     )
 }

@@ -26,11 +26,7 @@
 .card-help-2 {
     all: unset;
     display: block;
-<<<<<<< HEAD
-    padding: 24px;
-=======
     padding: 25px;
->>>>>>> refs/remotes/origin/developer
     margin-top: -305px;
     margin-left: 600px;
     border: 2px solid var(--secundaryColor);
@@ -50,14 +46,7 @@
 }
 
 .card-help-3:hover {
-<<<<<<< HEAD
-    background-color: var(--tertiaryColor) 
-<<<<<<< HEAD
-} 
-=======
-=======
     background-color: var(--tertiaryColor); 
->>>>>>> branch-lili
 } 
 
 .card-help-4 {
@@ -97,11 +86,5 @@
 }
 
 .card-help-6:hover {
-<<<<<<< HEAD
-    background-color: var(--tertiaryColor) 
-}
->>>>>>> refs/remotes/origin/developer
-=======
     background-color: var(--tertiaryColor); 
 }
->>>>>>> branch-lili

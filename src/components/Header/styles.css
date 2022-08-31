@@ -9,7 +9,7 @@
 }
 
 .header__logo {
-    width: 35px;
+    width: 50px;
     margin-left: 20px;
 }
 
@@ -28,6 +28,10 @@
     text-decoration: none;
 }
 
+.button__signup-item {
+    color: #0578a6;
+}
+
 .button__signup {
     display: inline-block;
     justify-content: center;
@@ -36,10 +40,10 @@
     align-items: center;
     vertical-align: middle;
     line-height: 1.25rem;
-    border-color: #033f73;
+    border-color: #ffffff;
     border-radius: 6px;
     color: #033f73;
-    background-color: #ffffff;
+    background-color: transparent;
     font-size: 14px;
     font-weight: bold;
     margin-right: 20px;
