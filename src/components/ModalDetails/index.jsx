@@ -1,7 +1,7 @@
 import './styles.css'
 
 import * as React from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 
 export default function ModalDetails(props) {
 
@@ -21,7 +21,7 @@ export default function ModalDetails(props) {
                     onClick={() => props.setShowModal(false)}
                 >
                     X
-                    </button>
+                </button>
 
                 <div>
                     <h6 className='modal__title'>Título do Livro</h6>
@@ -34,7 +34,6 @@ export default function ModalDetails(props) {
                     <div>
                         <p className='modal__disp'>Disponibilidade: </p>
                     </div>
-
                 </div>
 
                 <div className='description'>
@@ -42,34 +41,28 @@ export default function ModalDetails(props) {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora ipsa eligendi dolores natus pariatur aperiam magnam facere dolorum? Odio id ut excepturi corrupti eos ab tempore illum ducimus beatae aut, inventore neque, fuga culpa non doloremque repudiandae quas pariatur!</p>
                 
                     <aside>
-                    <p className='modal__text'>Endereço: <br /></p>
-                    <p className='modal__text'>Contato: </p>
+                        <p className='modal__text'>Endereço: <br /></p>
+                        <p className='modal__text'>Contato: </p>
                     </aside>
-                
                 </div>
 
-
-                
-
-
                 <div>
-                <h3 className='img__title'>Imagens</h3>
-                <ul>
-                    <li className='modal__img'></li>
-                    <li className='modal__img'></li>
-                    <li className='modal__img'></li>
-                </ul>
+                    <h3 className='img__title'>Imagens</h3>
+                    <ul>
+                        <li className='modal__img'></li>
+                        <li className='modal__img'></li>
+                        <li className='modal__img'></li>
+                    </ul>
                 </div>
 
                 <div>
                     <button 
-                    className='modal__btn'
-                    onClick={() => props.setShowModal(false)}
-                    >
-                    Fechar
+                        className='modal__btn'
+                        onClick={() => props.setShowModal(false)}
+                        >
+                        Fechar
                     </button>
                 </div>
-
             </div>
         </div>
     )
