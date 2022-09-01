@@ -58,48 +58,46 @@ export default function Login () {
 
     return (
         <Container>
-            <Header />
-            
-            <h2 className="title__login">Login</h2>
+        <Header />
+        
+        <h2 className="title__login">Login</h2>
 
-            <form className="form-group" onSubmit={handleSubmit}>
-                <fieldset className="form-group__login">
-                    <label htmlFor="user-email" className="label__text">Usuario</label>
-                    <i class="bi bi-envelope-fill login__icon"></i>
-                    <input type="email" 
-                    id="user-email" 
-                    className="user-login" 
-                    placeholder="Digite seu usuario" 
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    />
-                </fieldset>
+        <form className="form-group" onSubmit={handleSubmit}>
+            <fieldset className="form-group__login">
+                <label htmlFor="user-email" className="label__text">Usuario</label>
+                <i class="bi bi-envelope-fill login__icon"></i>
+                <input type="email" 
+                id="user-email" 
+                className="user-login" 
+                placeholder="Digite seu usuario" 
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                />
+            </fieldset>
 
-                <fieldset className="form-group__login">
-                    <label htmlFor="password" className="label__text">Senha</label>
-                    <i class="bi bi-lock-fill login__icon"></i>
-                    <input type="password" 
-                    id="password" 
-                    className="user-login" 
-                    placeholder="Digite uma senha segura"
-                    name="password" 
-                    value={form.password}
-                    onChange={handleChange}
-                    />
-                </fieldset>
+            <fieldset className="form-group__login">
+                <label htmlFor="password" className="label__text">Senha</label>
+                <i class="bi bi-lock-fill login__icon"></i>
+                <input type="password" 
+                id="password" 
+                className="user-login" 
+                placeholder="Digite uma senha segura"
+                name="password" 
+                value={form.password}
+                onChange={handleChange}
+                />
+            </fieldset>
 
-                <Link to="../ResetPassword" className="my-password">Esqueci minha senha</Link>
+            {warning.show && <p className='login__failed'>{warning.message}</p>}
 
-                {warning.show && <p className='login__failed'>{warning.message}</p>}
+            <button className="btn-login">Entrar</button>
 
-                <button className="btn-login">Entrar</button>
-
-                <p className="registe">Não tem uma conta? <Link to="../SinUp" className="registre-count">Registre-se</Link></p>
-            </form>
-            
-            <Footer />
-        </Container>
+            <p className="registe">Não tem uma conta? <Link to="../SinUp" className="registre-count">Cadastre-se</Link></p>
+        </form>
+        
+        <Footer />
+    </Container>
     )
 }
  

@@ -28,12 +28,22 @@
     text-decoration: none;
 }
 
+.button__signup-item {
+    color: #0578a6;
+}
+
+.button__signup-item:hover {
+    color: white;
+}
+
+
 .button__signup {
     display: inline-block;
     justify-content: center;
+    height: 30px;
+    width: 100px;
     align-items: center;
     vertical-align: middle;
-    padding: 0.25rem;
     line-height: 1.25rem;
     border-color: #ffffff;
     border-radius: 6px;
@@ -48,7 +58,12 @@
     font-family: roboto;
 }
 
-.base__input {
+.button__signup:hover {
+    background-color: #033f73;
+    color: #f2f2f2;
+}
+
+.header__input {
     display: inline-block;
     vertical-align: middle;
     padding: 0.25rem 7.25rem 0.25rem 0.25rem;
@@ -75,4 +90,12 @@
     outline: none;
     margin-left: 5px;
 
+}
+
+.header__user {
+    color: #033f73;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6em;
+    padding: 0.25rem 0.45rem 0.25rem 0.25rem;
 }

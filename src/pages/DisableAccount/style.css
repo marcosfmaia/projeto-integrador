@@ -1,11 +1,10 @@
-.form-reset {
+.form-disable-account {
     width: 100vw;
     height: 74vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:  center;
-    /* border: 1px solid var(--primaryColor); */
 }
 
 .form-group__reset {
@@ -13,7 +12,7 @@
     position: relative;
 }
 
-.title__reset {
+.title-disable-account {
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -26,7 +25,6 @@
     left: 5px;
 }
 
-.reset__email,
 .reset__pass {
     width: 300px;
     background-color: var(--bg-input);
@@ -41,7 +39,7 @@
     border: 2px solid var(--primaryColor);
 }
 
-.btn-reset {
+.btn-disable-account {
     all: unset;
     width: 300px;
     display: block;
@@ -69,8 +67,8 @@
     color: var(--primaryColor);
 }
 
-.previus__login {
-    color: #033F73;
+.previus__configurations {
+    color:var(--primaryColor);
     font-size: 14px;
     font-weight: bolder;
     text-decoration: none;
