@@ -19,6 +19,9 @@
   import LoggedIn from './pages/LoggedIn'
   import MocksTeste from './pages/MocksTeste'
   import QueryCep from './components/QueryCep'
+  import MocksTeste from './pages/MocksTeste'
+  import QueryCep from './components/QueryCep'
+
   
   function ProtectedRoutes ({ redirectTo }) {
     const token = localStorage.getItem('users');
