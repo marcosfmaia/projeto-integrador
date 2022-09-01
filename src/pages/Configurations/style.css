@@ -1,0 +1,50 @@
+.title__configurations{
+    border-bottom: 4px solid #033F73;
+    padding: 4px;
+    margin-top: 40px;
+}
+
+.configurations__main{
+    margin-top: 35px;
+    padding-top: 30px;
+    margin-bottom: 35px;
+}
+
+.change__btn {
+    display: block;
+    margin-left: 330px;
+    margin-top: 5px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #033F73;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.disable__account__btn{
+    display: block;
+    margin-left: 310px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #033F73;
+    cursor: pointer;
+    border: none;
+}
+
+.line{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 4px;
+    color: #0578A6;
+    background-color: #0578A6;
+}
+
+.main__text {
+    margin-top: 10px;
+}
