@@ -16,9 +16,7 @@
   import ChangeEmail from './pages/ChangeEmail'
   import ChangePassword from './pages/ChangePassword'
   import DisableAccount from './pages/DisableAccount'
-  import LoggedIn from './pages/LoggedIn'
-  import MocksTeste from './pages/MocksTeste'
-  import QueryCep from './components/QueryCep'
+  import LoginUser from './pages/LoginUser'
   import MocksTeste from './pages/MocksTeste'
   import QueryCep from './components/QueryCep'
 
@@ -42,7 +40,7 @@
           <Route path="/changeEmail" element={<ChangeEmail />} />
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/disableAccount" element={<DisableAccount />} />
-          <Route path="/loggedIn" element={<LoggedIn />} />
+          <Route path="/loginuser" element={<LoginUser />} />
           <Route path="/mocks" element={<MocksTeste />} />
           <Route path="/querycep" element={<QueryCep />} />
           <Route element={<ProtectedRoutes redirectTo='/' />}>

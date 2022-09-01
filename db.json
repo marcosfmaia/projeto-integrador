@@ -1,22 +1,5 @@
 {
   "books": [
-    {
-      "title": "sdas",
-      "genre": "sd",
-      "description": "sasda",
-      "id": 1
-    },
-    {
-      "title": "marcos",
-      "genre": "felipe",
-      "description": "maia diniz",
-      "id": 2
-    },
-    {
-      "title": "maia",
-      "genre": "feliep",
-      "description": "marcos",
-      "id": 3
-    }
+   
   ]
 }
