@@ -31,10 +31,11 @@
 .user-login {
     all: unset;
     width: 325px;
-    background-color: #F7F9F9;
+    background-color: #fff;
     padding: 12px 0px 12px 40px;
     border-radius: 8px;
 }
+
 
 .login__icon {
     color: #0578A6;

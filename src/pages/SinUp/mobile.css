@@ -1,0 +1,14 @@
+@media (max-width: 550px) {
+    .form-group {
+        width: 400px;
+    }
+
+    .form-group__login,
+    .form-group__cadastro {
+        margin-inline: 10px;
+    }
+
+    .user-name {
+        width: 310px;
+    }
+}

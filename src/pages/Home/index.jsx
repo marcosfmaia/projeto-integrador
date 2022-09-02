@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 //import Main from "../../components/Main";
 import Card from "../../components/Card";
 import ModalDetails from "../../components/ModalDetails"
+import MocksTeste from "../../components/MocksTeste";
 
 export default function Home() {
     
@@ -40,6 +41,7 @@ export default function Home() {
             <Card/>
             <Card/>
             <Card/>
+            <MocksTeste />
             
             
             {/*

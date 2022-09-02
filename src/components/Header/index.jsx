@@ -1,4 +1,5 @@
 import './styles.css';
+import './mobile.css';
 import logo from '../../assets/logoBookLovers48x48.png';
 import iconUser from '../../assets/profile.png';
 

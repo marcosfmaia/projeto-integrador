@@ -1,0 +1,15 @@
+@media (max-width: 780px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-block: 10px;
+    }
+    .header__form {
+        order: 1;
+    }
+
+    .header__menu {
+        order: 2;
+    }
+}

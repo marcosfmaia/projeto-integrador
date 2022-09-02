@@ -1,4 +1,5 @@
 import './style.css'
+import './mobile.css'
 
 import * as React from "react";
 import { useNavigate, Link } from 'react-router-dom'
