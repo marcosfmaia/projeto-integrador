@@ -13,6 +13,13 @@
   import RegisterBooks from './pages/RegisterBooks'
   import Configurations from './pages/Configurations'
   import Help from './pages/Help'
+  import ChangeEmail from './pages/ChangeEmail'
+  import ChangePassword from './pages/ChangePassword'
+  import DisableAccount from './pages/DisableAccount'
+  import LoginUser from './pages/LoginUser'
+  import MocksTeste from './pages/MocksTeste'
+  import QueryCep from './components/QueryCep'
+
   
   function ProtectedRoutes ({ redirectTo }) {
     const token = localStorage.getItem('users');
@@ -30,6 +37,12 @@
           <Route path="/registerbooks" element={<RegisterBooks />} />
           <Route path="/configurations" element={<Configurations />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/changeEmail" element={<ChangeEmail />} />
+          <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/disableAccount" element={<DisableAccount />} />
+          <Route path="/loginuser" element={<LoginUser />} />
+          <Route path="/mocks" element={<MocksTeste />} />
+          <Route path="/querycep" element={<QueryCep />} />
           <Route element={<ProtectedRoutes redirectTo='/' />}>
             {/* <Route path="/home" element={<Home />} /> */}
             {/* <Route path="/registerBooks" element={<RegisterBooks />} /> */}

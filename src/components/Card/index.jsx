@@ -12,7 +12,7 @@ export default function Card(props) {
         <div className="card">
         <div className="card__body">
             
-        <img className='img__book' src={book} alt='Livro' />
+            <img className='img__book' src={book} alt='Livro' />
             <h5 className="card__title">Título do livro</h5>
             <h4 className="card__subtitle">Gênero/Área de Conhecimento</h4><br></br>
             <h3>Descrição</h3>

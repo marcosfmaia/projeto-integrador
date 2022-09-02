@@ -9,7 +9,6 @@ import Main from "../../components/Main";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import api from '../../services/api';
-import { clear } from '@testing-library/user-event/dist/clear';
 
 
 export default function RegisterBks () {
@@ -86,13 +85,9 @@ export default function RegisterBks () {
                     message: ''
                 });
             }, 3000);
-            return;
        }
     }
 
-
-
-   
     return(
         <Container>
             <Header />

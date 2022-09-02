@@ -13,11 +13,10 @@
 .card-help-1 {
     all: unset;
     display: block;
+    background-color: #F6FCFF;
     padding: 25px;
     margin-top: 60px;
-    margin-right: 600px;
-    border: 2px solid var(--secundaryColor);
-    
+    margin-right: 600px;   
 }
 
 .card-help-1:hover {
@@ -26,10 +25,10 @@
 .card-help-2 {
     all: unset;
     display: block;
+    background-color: #F6FCFF;
     padding: 25px;
     margin-top: -305px;
     margin-left: 600px;
-    border: 2px solid var(--secundaryColor);
 }
 
 .card-help-2:hover {
@@ -39,10 +38,10 @@
 .card-help-3 {
     all: unset;
     display: block;
+    background-color: #F6FCFF;
     padding: 12px;
     margin-top: 60px;
     margin-right: 600px;
-    border: 2px solid var(--secundaryColor);
 }
 
 .card-help-3:hover {
@@ -52,10 +51,10 @@
 .card-help-4 {
     all: unset;
     display: block;
+    background-color: #F6FCFF;
     padding: 30px;
     margin-top: -280px;
     margin-left: 600px;
-    border: 2px solid var(--secundaryColor);
 }
 
 .card-help-4:hover {
@@ -65,10 +64,10 @@
 .card-help-5 {
     all: unset;
     display: block;
+    background-color: #F6FCFF;
     padding: 15px;
     margin-top: 60px;
     margin-right: 600px;
-    border: 2px solid var(--secundaryColor);
 }
 
 .card-help-5:hover {
@@ -78,11 +77,11 @@
 .card-help-6 {
     all: unset;
     display: block;
+    background-color: #F6FCFF;
     padding: 32px;
     margin-top: -226px;
     margin-left: 600px;
     margin-bottom: 85px;
-    border: 2px solid var(--secundaryColor);
 }
 
 .card-help-6:hover {
