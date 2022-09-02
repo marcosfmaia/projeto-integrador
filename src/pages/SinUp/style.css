@@ -9,7 +9,7 @@
 
 .form-group {
     width: 500px;
-    border: 2px solid var(--primaryColor);
+    background-color: #F6FCFF;
     border-radius: 10px;
     padding-block: 20px;
 }

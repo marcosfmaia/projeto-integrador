@@ -5,13 +5,11 @@ import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
 
-export default function Configurations ({children}) {
-
+export default function Configurations () {
 
     return (
 
         <Container>
-            {children}
         
             <Header />
 
@@ -42,8 +40,9 @@ export default function Configurations ({children}) {
     
 
             </div>
+
             <Footer />
-    
+
         </Container>
         
     )
