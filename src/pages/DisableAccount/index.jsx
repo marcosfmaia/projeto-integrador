@@ -3,13 +3,13 @@ import "./mobile.css"
 
 import { Link } from "react-router-dom"
 import Container from "../../components/Container";
-import Header from "../../components/Header";
+import HeaderLogged from "../../components/HeaderLogged";
 import Footer from "../../components/Footer";
 
 export default function DisableAccount () {
     return (
         <Container>
-            <Header />
+            <HeaderLogged />
             <form className="form-disable-account" onSubmit=" ">
                 <h2 className="title-disable-account">Desativar Conta</h2>
 

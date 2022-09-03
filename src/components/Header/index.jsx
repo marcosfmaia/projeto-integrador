@@ -36,7 +36,7 @@ export default function Header() {
                 <i class="bi bi-person-fill header__user"></i>
                 <Link className='menu__item' to='../../Login'>Login</Link>
                 <button className='button__signup'><Link className='button__signup-item' to='../../SinUp'>Cadastre-se</Link></button>
-                <Link className='menu__item' to='../../Help'>Ajuda</Link>
+                
             </nav >
         </header >
     );

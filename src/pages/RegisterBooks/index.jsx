@@ -5,7 +5,7 @@ import * as React from "react";
 import Images from '../../assets/book.jpg'
 import img from '../../assets/upload.png'
 
-import Header from "../../components/Header";
+import HeaderLogged from "../../components/HeaderLogged";
 import Main from "../../components/Main";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
@@ -99,7 +99,7 @@ export default function RegisterBks () {
 
     return(
         <Container>
-            <Header />
+            <HeaderLogged />
 
            <h2 className="title__register">Cadastre seus livros</h2>
 

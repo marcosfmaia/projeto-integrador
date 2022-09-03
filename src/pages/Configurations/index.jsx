@@ -1,6 +1,6 @@
 import "./style.css"
 import Container from "../../components/Container";
-import Header from "../../components/Header";
+import HeaderLogged from "../../components/HeaderLogged";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ export default function Configurations () {
 
         <Container>
         
-            <Header />
+            <HeaderLogged />
 
             <div className='configurations__header'>
             <h1 className='title__configurations'>Configurações da Conta</h1>
