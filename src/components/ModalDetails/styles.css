@@ -43,7 +43,7 @@
 .modal__title {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #033F73;
     margin-bottom: 10px;
 }
 
@@ -63,10 +63,16 @@
 
 .text__title {
     font-size: 16px;
-    color: #000000;
+    color: #033F73;
     margin-top: -30px;
     margin-bottom: 10px;
     text-align: justify;
+}
+
+.text__description {
+    color: #0578A6;
+    text-align: justify;
+
 }
 
 .modal__cad {
@@ -78,8 +84,8 @@
 }
 
 .modal__disp {
-    font-size: 12px;
-    color: #033F73;
+    font-size: 14px;
+    color: green;
     margin: 55px 520px;
     text-align: justify;
 }
@@ -94,8 +100,16 @@
 
 }
 
+.modal__description {
+    font-size: 14px;
+    color: #0578A6;
+    margin: -5px -200px 50px 480px;
+
+}
+
+
 .img__title {
-    color: black;
+    color: #033F73;
     font-size: 18px;
     border-bottom: 4px solid #D9D9D9;
     margin-right: 580px;
@@ -109,17 +123,17 @@
 }
 
 .modal__btn {
-    width: 10em;
+    width: 8em;
     display: inline-block;
     vertical-align: middle;
-    margin: 100px 275px;
-    padding: 0.25rem 0.55rem 0.25rem 0.55rem;
-    border-radius: 6px;
+    margin: 100px 280px;
+    padding: 8px;
+    border-radius: 10px;
     border-color: #f2f2f2;
     box-shadow: #f2f2f2;
     color: #f2f2f2;
-    background-color: #033f73;
-    font-size: 14px;
+    background-color:#033F73 ;
+    font-size: 18px;
     font-family: roboto;
     cursor: pointer;
 }
