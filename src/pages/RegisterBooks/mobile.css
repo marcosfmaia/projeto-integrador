@@ -1,0 +1,28 @@
+@media (max-width: 730px)  {
+    .register__books {
+        padding-inline: 10px;
+    }
+
+    .content__info-title {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .input__description-book {
+        width: 325px;
+    }
+}
+
+@media (max-width: 520px) {
+    .register__books {
+        padding-inline: 0;
+    }
+
+    .content__info-title,
+    .content-image__book,
+    .input__description-book {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

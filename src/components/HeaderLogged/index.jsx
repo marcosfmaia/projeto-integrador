@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <header className='header'>
-            <Link to="/"> <img className='header__logo' src={logo} alt='Book Lovers'/> </Link>
+            <Link to="../loggedUser"> <img className='header__logo' src={logo} alt='Book Lovers'/> </Link>
 
             <form className='header__form'>            
             <input
@@ -33,11 +33,11 @@ export default function Header() {
             </form>
             
             <nav className='header__menu'>
-                <i class="bi bi-person-fill header__user"></i>
-                <Link className='menu__item' to='../../LoggedUser'>Digital House</Link>
+                
                 <button className='button__signup'><Link className='button__signup-item' to='../../RegisterBooks'>Cadastre seus livros</Link></button>
                 <Link className='menu__item' to='../../Configurations'>Configurações</Link>
                 <Link className='menu__item' to='../../Help'>Ajuda</Link>
+                <Link className='menu__item' to='../../'>Sair</Link>
             </nav >
         </header >
     );

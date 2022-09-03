@@ -1,0 +1,15 @@
+@media (max-width: 840px) {
+    .card__help {
+        margin: 25px;
+    }
+}
+
+@media (max-width: 650px) {
+    .content__card {
+        flex-wrap: wrap;
+    }
+
+    .card__help {
+        margin: 25px 0;
+    }
+}

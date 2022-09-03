@@ -42,7 +42,7 @@ export default function Login () {
             if(user) {
                 localStorage.setItem('token', user.email)
                 setWarning({ show: false, message: '' });
-                navigate('./Home')
+                navigate('../loggedUser')
             } else {
                 setWarning({ show: true, message: 'Usuário ou senha inválidos' });
             }
@@ -54,7 +54,6 @@ export default function Login () {
                 message: ''
             });
         }, 3000);
-        return;
     }
 
     return (
