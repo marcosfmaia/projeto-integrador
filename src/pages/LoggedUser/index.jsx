@@ -4,7 +4,7 @@ import HeaderLogged from "../../components/HeaderLogged";
 import Card from "../../components/Card";
 import ModalDetails from "../../components/ModalDetails";
 import Footer from "../../components/Footer";
-import MocksTeste from "../../components/MocksTeste";
+import Mocks from "../../components/Mocks";
 
 export default function Help () {
     return (
@@ -19,7 +19,7 @@ export default function Help () {
             <Card/>
             <Card/>
             <Card/>
-            <MocksTeste />
+            <Mocks />
             
             </div>
             

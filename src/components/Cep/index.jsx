@@ -3,7 +3,7 @@ import './styles.css'
 import * as React from 'react';
 import axios from 'axios';
 
-export default function Cep(props) {
+export default function Cep() {
 
     const [input, setInput] = React.useState({
         search: ''
@@ -31,8 +31,10 @@ export default function Cep(props) {
 
 
     
+    
     const getAdress = async () => {
-        const response = await axios.get(`https://viacep.com.br/ws/60748-540/json/`);
+        const response = await axios.get(`https://viacep.com.br/ws/${input}/json/`);
+        console.log(response)
         setAdress({
             city: response.data.localidade,
             state: response.data.uf,
@@ -41,9 +43,9 @@ export default function Cep(props) {
             district: response.data.bairro
         })
     }
-
-    // React.useEffect(() => {
-    // }, [])
+   
+    React.useEffect(() => {
+    }, [])
 
     const handleCep =  () => {
         getAdress()
@@ -65,9 +67,7 @@ export default function Cep(props) {
                     name='search'
                     value={input.search}
                     onChange={handleChange}
-                    
                     />
-                    <i class="bi bi-search search__icon"></i>
                     <a className="btn__query-cep" onClick={handleCep}>Ok</a>
                 </fieldset>    
 

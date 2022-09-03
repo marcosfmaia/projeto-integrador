@@ -4,10 +4,9 @@ import './styles.css';
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-//import Main from "../../components/Main";
 import Card from "../../components/Card";
 import ModalDetails from "../../components/ModalDetails"
-import MocksTeste from "../../components/MocksTeste";
+import Mocks from "../../components/Mocks";
 
 export default function Home() {
     
@@ -41,7 +40,6 @@ export default function Home() {
             <Card/>
             <Card/>
             <Card/>
-            <MocksTeste />
             
             
             {/*

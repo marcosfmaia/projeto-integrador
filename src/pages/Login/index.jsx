@@ -35,19 +35,20 @@ export default function Login () {
         e.preventDefault()
 
         let users = []
+
         if(localStorage.getItem('users')) {
             users = JSON.parse(localStorage.getItem('users'))
-            const user = users.find(use => use.email === form.email && use.password === form.password)
+            const user = users.find(u => u.email === form.email && u.password === form.password)
             
             if(user) {
                 localStorage.setItem('token', user.email)
                 setWarning({ show: false, message: '' });
                 navigate('../loggedUser')
             } else {
-                setWarning({ show: true, message: 'Usuário ou senha inválidos' });
+                setWarning({ show: true, message: 'Usuário ou senha inválidos!!!' });
             }
         } else {
-            setWarning({ show: true, message: 'Não existe usuários cadastrados' });
+            setWarning({ show: true, message: 'Nenhum usuário cadastrado!' });
         }setTimeout(() => {
             setWarning({
                 show: false,
@@ -89,11 +90,13 @@ export default function Login () {
                 />
             </fieldset>
 
-            {warning.show && <p className='login__failed'>{warning.message}</p>}
-
             <button className="btn-login">Entrar</button>
 
+            {warning.show && <p className='login__failed'>{warning.message}</p>}
+
             <p className="registe">Não tem uma conta? <Link to="../SinUp" className="registre-count">Cadastre-se</Link></p>
+
+            <p className='form__lgpd'>Coletamos suas informações pessoais para prestar e continuamente melhorar nossos produtos e serviços. Todos os seus dados estão protegidos e não seram divulgador</p>
         </form>
         
         <Footer />

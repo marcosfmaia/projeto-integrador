@@ -3,11 +3,9 @@ import './mobile.css'
 
 import * as React from "react";
 
-import Images from '../../assets/book.jpg'
 import img from '../../assets/upload.png'
 
 import HeaderLogged from "../../components/HeaderLogged";
-import Main from "../../components/Main";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Cep from '../../components/Cep';
@@ -76,7 +74,7 @@ export default function RegisterBks () {
             })
             setWarning({
                 show: true,
-                message: 'Usuario cadastrado com sucessso'
+                message: 'Livro cadastrado com sucessso'
             });
             setTimeout(() => {
                 setWarning({
@@ -183,6 +181,7 @@ export default function RegisterBks () {
                     <button className="btn-register__book">Cadastrar</button>
                 </div>
             </form>
+
             <Footer />
         </Container>
     )

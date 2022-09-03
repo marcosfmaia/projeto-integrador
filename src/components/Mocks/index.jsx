@@ -1,6 +1,6 @@
 import * as React from 'react'
 import book from '../../assets/livro01.webp';
-import ModalDetails from '../../components/Card';
+import ModalDetails from '../Card';
 import api from '../../services/api'
 
 export default function MocksTeste (props) {

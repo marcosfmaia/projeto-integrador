@@ -77,3 +77,9 @@
     font-weight: bold;
     text-decoration: none;
 }
+
+.form__lgpd {
+    font-size: 14px;
+    text-align: justify;
+    margin: 30px 70px 10px;
+}

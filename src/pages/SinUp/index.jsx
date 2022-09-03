@@ -148,6 +148,8 @@ export default function SinUp () {
                     <i class="bi bi-arrow-left-short register__arrow"></i>
                     <Link to="/login" className="register__login">Voltar para login</Link>
                 </div>
+
+                <p className='form__lgpd-register'>Coletamos suas informações pessoais para prestar e continuamente melhorar nossos produtos e serviços. Todos os seus dados estão protegidos e não seram divulgador</p>
             </form>
 
             <Footer />
