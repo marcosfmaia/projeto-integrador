@@ -25,33 +25,48 @@
     font-family: Roboto;
     font-size: 18px;
     text-align: left;
+    color: #033f73;
 }
 
 .card__subtitle {
     font-family: Roboto;
     font-size: 14px;
     text-align: left;
+    color: #0578A6;
+    margin-top: 10px;
 }
 
 .card__description {
     font-family: Roboto;
     font-size: 16px;
     text-align: start;
+    font-size: 15px;
+    text-align: justify;
 }
 
 .card__btn {
-    width: 100px;
+    width: 100x;
     display: inline-block;
     vertical-align: middle;
-    padding: 0.25rem 0.55rem 0.25rem 0.55rem;
-    border-radius: 6px;
+    padding: 9px;
+    border-radius: 10px;
     border-color: #f2f2f2;
     box-shadow: #f2f2f2;
     color: #f2f2f2;
-    background-color: #033f73;
-    font-size: 14px;
+    background-color: #0578A6;
+    font-size: 17px;
     font-family: roboto;
     outline: none;
-    margin-left: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
     cursor: help;
+}
+
+.card__btn:hover {
+    box-shadow: 0 1px 4px #f2f2f2, 0 1px 4px #0578A6;
+}
+
+.description {
+    color: #033f73;
+    margin-bottom: 10px;
 }
