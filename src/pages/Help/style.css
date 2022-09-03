@@ -27,5 +27,9 @@
 }
 
 .cantent-card {
-    background-color: var(--tertiaryColor); 
+    background-color: #f2f2f2; 
+}
+
+.card__help:hover {
+    background-color: var(--tertiaryColor);
 }

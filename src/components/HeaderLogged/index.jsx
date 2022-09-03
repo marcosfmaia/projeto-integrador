@@ -33,11 +33,11 @@ export default function Header() {
             </form>
             
             <nav className='header__menu'>
-                <i class="bi bi-person-fill header__user"></i>
-                <Link className='menu__item' to='../../LoggedUser'>Digital House</Link>
+                
                 <button className='button__signup'><Link className='button__signup-item' to='../../RegisterBooks'>Cadastre seus livros</Link></button>
                 <Link className='menu__item' to='../../Configurations'>Configurações</Link>
                 <Link className='menu__item' to='../../Help'>Ajuda</Link>
+                <Link className='menu__item' to='../../'>Sair</Link>
             </nav >
         </header >
     );
