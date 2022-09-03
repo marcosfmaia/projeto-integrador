@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <header className='header'>
-            <Link to="/"> <img className='header__logo' src={logo} alt='Book Lovers'/> </Link>
+            <Link to="../loggedUser"> <img className='header__logo' src={logo} alt='Book Lovers'/> </Link>
 
             <form className='header__form'>            
             <input
