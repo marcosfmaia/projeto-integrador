@@ -1,89 +1,22 @@
-.title-help {
+.title__page {
+    color: black;
+    font-size: 14px;
     border-bottom: 4px solid var(--primaryColor);
-    padding: 4px;
-    margin-top: 40px;
+    margin: auto;
+    margin-block: 30px 20px;
+    padding-bottom: 5px;
 }
 
-.card-title {
-    color: var(--primaryColor);
-    font-style: bold;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-.card-help-1 {
-    all: unset;
-    display: block;
-    background-color: #F6FCFF;
-    padding: 25px;
-    margin-top: 60px;
-    margin-right: 600px;   
-}
+.card {
+    width: auto;
+    margin-top: 20px;
+    border-radius: 2px;
 
-.card-help-1:hover {
-    background-color: var(--tertiaryColor);
-}
-.card-help-2 {
-    all: unset;
-    display: block;
-    background-color: #F6FCFF;
-    padding: 25px;
-    margin-top: -305px;
-    margin-left: 600px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-.card-help-2:hover {
-    background-color: var(--tertiaryColor); 
-} 
-
-.card-help-3 {
-    all: unset;
-    display: block;
-    background-color: #F6FCFF;
-    padding: 12px;
-    margin-top: 60px;
-    margin-right: 600px;
-}
-
-.card-help-3:hover {
-    background-color: var(--tertiaryColor); 
-} 
-
-.card-help-4 {
-    all: unset;
-    display: block;
-    background-color: #F6FCFF;
-    padding: 30px;
-    margin-top: -280px;
-    margin-left: 600px;
-}
-
-.card-help-4:hover {
-    background-color: var(--tertiaryColor); 
-} 
-
-.card-help-5 {
-    all: unset;
-    display: block;
-    background-color: #F6FCFF;
-    padding: 15px;
-    margin-top: 60px;
-    margin-right: 600px;
-}
-
-.card-help-5:hover {
-    background-color: var(--tertiaryColor); 
-} 
-
-.card-help-6 {
-    all: unset;
-    display: block;
-    background-color: #F6FCFF;
-    padding: 32px;
-    margin-top: -226px;
-    margin-left: 600px;
-    margin-bottom: 85px;
-}
-
-.card-help-6:hover {
-    background-color: var(--tertiaryColor); 
+    cursor: pointer;
 }
