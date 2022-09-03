@@ -16,41 +16,35 @@ export default function ModalDetails(props) {
         <div className='modal'>
             
             <div className='modal__body'>
-                <button 
-                    className='modal__btnx'
-                    onClick={() => props.setShowModal(false)}
-                >
-                    X
-                    </button>
-
+                
                 <div>
-                    <h6 className='modal__title'>Título do Livro</h6>
-                    <h5 className='modal__subtitle'>Gênero do livro</h5>
+                    <h6 className='modal__title'>Aprendendo a desenvolver Aplicações Web</h6>
+                    <h5 className='modal__subtitle'>Tecnologia da Informação</h5>
                     
                     <div>
-                        <p className='modal__cad'>Cadastro:</p>
+                        <p className='modal__cad'><strong>Cadastro:</strong>128.5</p>
                     </div>
 
                     <div>
-                        <p className='modal__disp'>Disponibilidade: </p>
+                        <p className='modal__disp'><strong>Disponível </strong> </p>
                     </div>
 
                 </div>
 
                 <div className='description'>
                     <h4 className='text__title'>Descrição</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora ipsa eligendi dolores natus pariatur aperiam magnam facere dolorum? Odio id ut excepturi corrupti eos ab tempore illum ducimus beatae aut, inventore neque, fuga culpa non doloremque repudiandae quas pariatur!</p>
+                    <p className='text__description'>Por meio de tutorias que permitem pôr a mão
+                    na massa, este guia prático mostra como criar uma interface de usuário, 
+                    implementar um servidor, desenvolver uma comunicação cliente-servidor e usar
+                    um serviço baseado em nuvem para implantar a aplicação aos desenvolvedores
+                    inexperientes de aplicações web.</p>
                 
                     <aside>
-                    <p className='modal__text'>Endereço: <br /></p>
-                    <p className='modal__text'>Contato: </p>
+                    <p className='modal__text'><strong>Endereço:</strong> <br /></p>
+                    <p className='modal__text'><strong>Contato:</strong> </p>
                     </aside>
                 
                 </div>
-
-
-                
-
 
                 <div>
                 <h3 className='img__title'>Imagens</h3>
