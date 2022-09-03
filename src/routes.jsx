@@ -18,6 +18,7 @@
   import DisableAccount from './pages/DisableAccount'
   import LoginUser from './pages/LoginUser'
   import MocksTeste from './pages/MocksTeste'
+  import LoggedUser from './pages/LoggedUser'
 
 
   
@@ -42,6 +43,7 @@
           <Route path="/disableAccount" element={<DisableAccount />} />
           <Route path="/loginuser" element={<LoginUser />} />
           <Route path="/mocks" element={<MocksTeste />} />
+          <Route path="/loggedUser" element={<LoggedUser />} />
           <Route element={<ProtectedRoutes redirectTo='/' />}>
             {/* <Route path="/home" element={<Home />} /> */}
             {/* <Route path="/registerBooks" element={<RegisterBooks />} /> */}
