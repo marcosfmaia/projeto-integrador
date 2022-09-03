@@ -3,13 +3,13 @@ import './mobile.css'
 
 import { Link } from 'react-router-dom'
 import Container from '../../components/Container';
-import Header from '../../components/Header';
+import HeaderLogged from '../../components/HeaderLogged';
 import Footer from '../../components/Footer';
 
 export default function ChangeEmail () {
     return (
         <Container>
-            <Header />
+            <HeaderLogged />
             <form className='form-change-email' onSubmit=''>
                 <h2 className='title-change-email'>Alterar E-mail</h2>
 

@@ -1,12 +1,12 @@
 import "./style.css"
 import Container from "../../components/Container";
-import Header from "../../components/Header";
+import HeaderLogged from "../../components/HeaderLogged";
 import Footer from "../../components/Footer";
 
 export default function Help () {
     return (
         <Container>
-            <Header />
+            <HeaderLogged />
             <div className="title"> 
                <h1 className="title-help">Como podemos te ajudar?</h1> 
             </div>
