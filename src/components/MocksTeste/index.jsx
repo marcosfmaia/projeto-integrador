@@ -22,7 +22,7 @@ export default function MocksTeste (props) {
                 {
                     books.map(book => (
                         <div className="card__body">
-                            <img className='img__book' src={book.image} alt='Livro' />
+                            <img className='img__book' src={book.photo} alt='Livro' />
                             <h5 className="card__title">{book.title}</h5>
                             <h4 className="card__subtitle">{book.genre}</h4><br></br>
                             <h3>Descrição</h3>

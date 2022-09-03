@@ -3,12 +3,15 @@ import './style.css'
 import * as React from "react";
 
 import Images from '../../assets/book.jpg'
+import img from '../../assets/upload.png'
 
 import Header from "../../components/Header";
 import Main from "../../components/Main";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
+import Cep from '../../components/Cep';
 import api from '../../services/api';
+import { getBase64 } from '../../services/base64';
 
 
 export default function RegisterBks () {
@@ -17,7 +20,7 @@ export default function RegisterBks () {
     const [form, setForm] = React.useState({
         title: '',
         genre: '',
-        // image: '',
+        photo: '',
         description: ''
     })
 
@@ -43,6 +46,12 @@ export default function RegisterBks () {
         })
     }
 
+    const onChangeImage = async (e) => {
+        const photo = await getBase64(e.target.files[0])
+        console.log(photo);
+        setForm((old) => ({ ...old, photo: photo}))
+    }
+
     const validation = (data) => {
         for(const key in data) {
             if(['', 0, null].includes(data[key])) {
@@ -57,7 +66,7 @@ export default function RegisterBks () {
 
         if(validation(form)) {
             await api.post('/books',
-            { title: form.title, genre: form.genre, description: form.description })
+            { title: form.title, genre: form.genre, photo: form.photo, description: form.description })
             await getBooks()
             setForm({
                 title: '',
@@ -120,19 +129,21 @@ export default function RegisterBks () {
                         />
                     </div>
                     <figure className="content-image__book">
-                        {/* <img src={Images} alt="imagem do livro" className="image__book" /> */}
 
-{/* 
-                        <legend className='description__book'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.  Maxime mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</legend> */}
+                        <img 
+                        className="img__upload"
+                        src={form.photo === "" ? img : `data:image/jpeg;base64,${form.photo}`} 
+                        alt="imagem do livro" />
+
+
 
                         <label htmlFor="file" className='choose__file-book'>Escolher imagem</label>
                         <input type="file" 
                         accept='image/' 
                         id='file' 
                         className='file__image-book'
-                        name='textarea'
-                        value={form.image}
-                        onChange={handleChange}/>
+                        name='photo'
+                        onChange={onChangeImage}/>
                     </figure>
 
 
@@ -165,21 +176,7 @@ export default function RegisterBks () {
                     <p  className='location-origin__book'>Local de origem do livro</p>
                 </div>
 
-                {/* <div className="form-query__cep">
-                    <label htmlFor="query__cep" className='query__cep'>Digite seu CEP</label>
-
-                    <fieldset className="form-group__info__cep">
-                        <input 
-                        type="search" 
-                        id="query__cep"
-                        className="input__cep" 
-                        placeholder='ex: 00000000'
-                        />
-                        <i class="bi bi-search search__icon"></i>
-
-                        <button className="btn__query-cep">Ok</button>
-                    </fieldset>    
-                </div> */}
+                <Cep />
 
                 <div className='content__btn'>
                     <button className="btn-register__book">Cadastrar</button>
