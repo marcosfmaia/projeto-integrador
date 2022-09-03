@@ -173,7 +173,7 @@ export default function RegisterBks () {
                         Localização 
                     </h4>
 
-                    <h5 className="origin__location">Origen:</h5>
+                    <h5 className="origin__location">Origem:</h5>
                     <p  className='location-origin__book'>Local de origem do livro</p>
                 </div>
 
