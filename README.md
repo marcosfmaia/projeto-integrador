@@ -8,7 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Geneseli Dias de Oliveira Albuquerque](https://github.com/geneselidias)
 - [Marcos Felipe Maia Diniz](https://github.com/marcosfmaia)
 - [William Batista Costa](https://github.com/williambcosta) 
-=======
+- [Roberto Rangel de Souza Teixeira](https://github.com/robertoteixeira-dev) 
+
 ## Available Scripts
 
 
