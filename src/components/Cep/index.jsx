@@ -31,8 +31,8 @@ export default function Cep(props) {
 
 
     
-    const getAdress = async () => {
-        const response = await axios.get(`https://viacep.com.br/ws/60748-540/json/`);
+    const getAdress = async (cep) => {
+        const response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
         setAdress({
             city: response.data.localidade,
             state: response.data.uf,
@@ -46,7 +46,7 @@ export default function Cep(props) {
     // }, [])
 
     const handleCep =  () => {
-        getAdress()
+        getAdress(input.search);
     }
 
 
