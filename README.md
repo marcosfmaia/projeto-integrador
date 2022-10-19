@@ -17,7 +17,7 @@ In the project directory, you can run:
 
 **Link Figma:** https://project-integrador-dh.vercel.app/registerBooks
 
-**Link do Projeto hospedado:** https://project-integrador-dh.vercel.app/
+**Link do Projeto hospedado:** https://book-loves.vercel.app/
 
 
 ## Branch para fazer os merge dos exercicios de cada um.
